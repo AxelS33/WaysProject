@@ -19,6 +19,7 @@ namespace BusinessLayer.Mapping
         public Feature(string name)
         {
             this.name = name;
+            this.weight = 0;
         }
 
         public Feature(string name, int weight)

@@ -40,7 +40,7 @@ namespace DAL
             return reader;
         }
 
-        public SqlDataReader executeWithParameter(String procedureName)
+        public SqlDataReader executeWithParameter(String procedureName, List<Object> parameters)
         {
             SqlDataReader reader = cmd.ExecuteReader();
 

@@ -16,9 +16,15 @@ namespace BusinessLayer.Mapping
         public Answer pickedAnswer { get; set; }
         private int order { get; set; }
 
-        public Question( )
+        public Question()
         {
-           
+
+        }
+
+        public Question(int id, string description)
+        {
+            this.id = id;
+            this.description = description;
         }
 
 
@@ -42,7 +48,7 @@ namespace BusinessLayer.Mapping
         public List<Answer> getAnswers(DAL.DAL dal)
         {
             List<Answer> listAnswer = new List<Answer>();
-            SqlDataReader answerReader = dal.executeProcedure("getAnswer") ;
+            SqlDataReader answerReader = dal.executeProcedure("getAnswer");
             while (answerReader.Read())
             {
                 Answer answer = new Answer();
@@ -54,5 +60,18 @@ namespace BusinessLayer.Mapping
             answerReader.Close();
             return listAnswer;
         }
+
+        internal void setFeature(Feature feature)
+        {
+            this.feature = feature;
+        }
+
+        internal void setOrder(int order)
+        {
+            this.order = order;
+        }
+
+
     }
 }
+
