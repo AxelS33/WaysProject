@@ -71,6 +71,28 @@ namespace BusinessLayer.Mapping
             this.order = order;
         }
 
+        public void addOrientionQuestion(DAL.DAL dal)
+        {
+            List<Object> parameters = new List<object>();
+            parameters.Add(this.description);
+            parameters.Add(this.feature.getName());
+            dal.executeWithParameter("addQuestion", parameters);
+        }
+
+        public void modifyQuestion(DAL.DAL dal)
+        {
+
+        }
+
+        public void deleteQuestion(DAL.DAL dal)
+        {
+
+        }
+        public void modifyQuestionSettings(DAL.DAL dal)
+        {
+
+        }
+
 
     }
 }
