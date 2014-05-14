@@ -1,0 +1,18 @@
+﻿<Window x:Class="Wayz.WGameAdmin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WGameAdmin" Height="500" Width="700">
+    <Grid>
+        <Image Margin="10,10,439,0" Source="exia-logo-20111.png" Stretch="Fill" Width="243" Height="94" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label Content="AdminUsername" HorizontalAlignment="Left" Margin="572,10,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Button Content="Logout" HorizontalAlignment="Left" Margin="607,44,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label Content="GAME" HorizontalAlignment="Center" Margin="0,133,0,0" VerticalAlignment="Top" FontSize="20" Width="62"/>
+        <Label Content="Add, update, delete : " HorizontalAlignment="Left" Margin="130,226,0,0" VerticalAlignment="Top"/>
+        <Button Content="Question Table" HorizontalAlignment="Left" Margin="301,230,0,0" VerticalAlignment="Top" Width="103"/>
+        <Label Content="Organize questions in questionnary : " HorizontalAlignment="Left" Margin="46,280,0,0" VerticalAlignment="Top"/>
+        <Button Content="Organization" HorizontalAlignment="Left" Margin="301,284,0,0" VerticalAlignment="Top" Width="103"/>
+        <Label Content="Print score with username : " HorizontalAlignment="Left" Margin="97,335,0,0" VerticalAlignment="Top"/>
+        <Button Content="Print score" HorizontalAlignment="Left" Margin="301,339,0,0" VerticalAlignment="Top" Width="103"/>
+        <Button Content="Main Menu" HorizontalAlignment="Left" Margin="572,438,0,0" VerticalAlignment="Top" Width="78"/>
+    </Grid>
+</Window>
