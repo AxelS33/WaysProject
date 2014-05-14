@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace Services
 {
-    public class WaysOriention : Services
+    public class WaysOriention : Service
     {
+        public WaysOriention()
+        {
+
+        }
+
         public override StgMsg.StgMsg launchServices(StgMsg.StgMsg msg)
         {
-            foreach (string value in Enum.GetValues(typeof(Functionalities)))
+            /*foreach (string value in Enum.GetValues(typeof(OrientationFunctionalities)))
             {
                 if (value == msg.invoke)
                 {
@@ -20,7 +25,7 @@ namespace Services
                     this.bac.redirect(msg);
                     return msg;
                 }
-            }
+            }*/
 
             msg.statut = false;
             return msg;
@@ -29,11 +34,11 @@ namespace Services
        
     }
 
-    private enum Functionalities
+    /*enum OrientationFunctionalities
     {
         Next = "nextQuestion",
         Launch = "launch",
         Validate = "validate",
         Send = "sendMail",
-    }
+    }*/
 }

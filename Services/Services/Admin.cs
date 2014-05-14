@@ -6,21 +6,26 @@ using System.Threading.Tasks;
 
 namespace Services
 {
-    public class Admin : Services
+    public class Admin : Service
     {
-        
+
+        public Admin()
+        {
+
+        }
+
         public override StgMsg.StgMsg launchServices(StgMsg.StgMsg msg)
         {
             return msg;
         }
     }
 
-    private enum Functionalities
+   /* enum AdminFunctionalities
     {
         Add = "addQuestion",
         Modify = "modifyQuestion",
         Delete = "deleteQuestion",
         Show = "showQuestion",
         Login = "login",
-    }
+    }*/
 }

@@ -3,3 +3,12 @@ C:\Users\Axel\Documents\Wayz\Services\Services\bin\Debug\Services.pdb
 C:\Users\Axel\Documents\Wayz\Services\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
 C:\Users\Axel\Documents\Wayz\Services\Services\obj\Debug\Services.dll
 C:\Users\Axel\Documents\Wayz\Services\Services\obj\Debug\Services.pdb
+C:\Users\Axel\Documents\WaysProject\Services\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
+C:\Users\Axel\Documents\WaysProject\Services\Services\bin\Debug\Services.dll
+C:\Users\Axel\Documents\WaysProject\Services\Services\bin\Debug\Services.pdb
+C:\Users\Axel\Documents\WaysProject\Services\Services\bin\Debug\BAC.dll
+C:\Users\Axel\Documents\WaysProject\Services\Services\bin\Debug\StgMsg.dll
+C:\Users\Axel\Documents\WaysProject\Services\Services\bin\Debug\BAC.pdb
+C:\Users\Axel\Documents\WaysProject\Services\Services\bin\Debug\StgMsg.pdb
+C:\Users\Axel\Documents\WaysProject\Services\Services\obj\Debug\Services.dll
+C:\Users\Axel\Documents\WaysProject\Services\Services\obj\Debug\Services.pdb

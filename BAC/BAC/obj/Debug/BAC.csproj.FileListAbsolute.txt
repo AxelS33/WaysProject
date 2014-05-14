@@ -1,1 +1,7 @@
 C:\Users\Axel\Documents\Wayz\BAC\BAC\obj\Debug\BAC.csprojResolveAssemblyReference.cache
+C:\Users\Axel\Documents\WaysProject\BAC\BAC\bin\Debug\BAC.dll
+C:\Users\Axel\Documents\WaysProject\BAC\BAC\bin\Debug\BAC.pdb
+C:\Users\Axel\Documents\WaysProject\BAC\BAC\bin\Debug\StgMsg.dll
+C:\Users\Axel\Documents\WaysProject\BAC\BAC\bin\Debug\StgMsg.pdb
+C:\Users\Axel\Documents\WaysProject\BAC\BAC\obj\Debug\BAC.dll
+C:\Users\Axel\Documents\WaysProject\BAC\BAC\obj\Debug\BAC.pdb
