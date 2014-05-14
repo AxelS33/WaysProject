@@ -12,7 +12,8 @@ namespace BusinessLayer.Mapping
         private int id { get; set; }
         private string description { get; set; }
         public List<Answer> listAnswer { get; set; }
-        private Feature feature { get; set; }
+        public Feature feature { get; set; }
+        public Answer pickedAnswer { get; set; }
         private int order { get; set; }
 
         public Question( )

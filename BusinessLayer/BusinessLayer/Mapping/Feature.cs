@@ -10,7 +10,7 @@ namespace BusinessLayer.Mapping
     {
         private int id;
         private string name;
-        private int weight;
+        public int weight { get; set; }
 
         public Feature()
         {

@@ -34,13 +34,21 @@ namespace BusinessLayer.WC
 
 
 
-        public void weightProfile(StgMsg.StgMsg oMsg)
+        public StgMsg.StgMsg weightProfile(StgMsg.StgMsg oMsg)
         {
 
             Player curentProfile = (Player) oMsg.data[0];
             Question curentQuestion = curentProfile.currentQuestion;
-            Answer answer = (Answer)oMsg.data[1];
+            Answer answer = curentQuestion.pickedAnswer;
+            BCQuestionnary questionnary = new BCQuestionnary();
+            oMsg = questionnary.weightProfileFeature(oMsg);
 
+            Question questionPicked = this.getNextQuestion(oMsg);
+            curentProfile.currentQuestion = questionPicked;
+            curentProfile.askedQuestion.Add(questionPicked);
+            oMsg.data.SetValue(curentProfile, 0);
+
+            return oMsg;
 
         }
 
@@ -55,6 +63,12 @@ namespace BusinessLayer.WC
             return questionPicked;
 
 
+        }
+
+        public List<Feature> compareFeature(StgMsg.StgMsg oMsg)
+        {
+            BCQuestionnary questionnary = new BCQuestionnary();
+            questionnary.compareProfile(oMsg);
         }
     }
 }

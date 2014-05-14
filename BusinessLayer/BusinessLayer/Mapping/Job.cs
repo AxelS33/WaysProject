@@ -18,6 +18,11 @@ namespace BusinessLayer.Mapping
             this.listFeature.Add(new Feature(featureName, weight));
         }
 
+        public Job()
+        {
+
+        }
+
         public Job(List<Feature> listFeature)
         {
             this.listFeature = listFeature;

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BusinessLayer.Mapping;
+using System.Data.SqlClient;
 
 namespace BusinessLayer.BC
 {
@@ -19,8 +20,21 @@ namespace BusinessLayer.BC
 
         
 
-        public void weightProfileFeature()
+        public StgMsg.StgMsg weightProfileFeature(StgMsg.StgMsg msg)
         {
+            Player currentProfile = (Player) msg.data[0];
+            Feature featureToWeight = currentProfile.currentQuestion.feature;
+            int weightToAdd = featureToWeight.weight;
+
+            foreach(Feature curentFeature in currentProfile.listFeature)
+            {
+                if (curentFeature == featureToWeight)
+                {
+                    curentFeature.weight = weightToAdd;
+                }
+            }
+            msg.data.SetValue(currentProfile, 0);
+            return msg;
 
         }
 
@@ -64,6 +78,26 @@ namespace BusinessLayer.BC
             return found;
         }
 
-      
+
+
+        internal void compareProfile(StgMsg.StgMsg oMsg)
+        {
+            DAL.DAL dal = new DAL.DAL();
+            SqlDataReader AllJobReader = dal.executeProcedure("getAllJob");
+            List<Job> listAllJob = new List<Job>();
+
+            while (AllJobReader.Read())
+            {
+                Job job = new Job();
+                this.getFeatureOfJob(dal);
+            }
+
+         
+        }
+
+        private void getFeatureOfJob(DAL.DAL dal)
+        {
+           // SqlDataReader featureReader = dal.executeWithParameter(
+        }
     }
 }
