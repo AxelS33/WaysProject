@@ -10,6 +10,6 @@ namespace DAL
     interface IDAL
     {
           SqlDataReader executeProcedure(String procedureName);
-          SqlDataReader executeWithParameter(String procedureName);
+          SqlDataReader executeWithParameter(String procedureName, List<Object> parameters);
     }
 }

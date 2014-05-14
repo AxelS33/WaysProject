@@ -20,13 +20,17 @@ namespace BusinessLayer.Mapping
            
         }
 
+        public Question(int id, string description)
+        {
+            this.id = id;
+            this.description = description;
+        }
+
 
         internal Feature getFeature()
         {
             return this.feature;
         }
-
-
 
         internal List<Question> getAllQuestion(DAL.DAL dal)
         {
@@ -52,6 +56,16 @@ namespace BusinessLayer.Mapping
             }
             answerReader.Close();
             return listAnswer;
+        }
+
+        internal void setFeature(Feature feature)
+        {
+            this.feature = feature;
+        }
+
+        internal void setOrder(int order)
+        {
+            this.order = order;
         }
     }
 }
