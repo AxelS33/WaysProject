@@ -14,7 +14,8 @@ namespace BusinessLayer.BC
         public StgMsg.StgMsg setQuestionnary(DAL.DAL dal)
         {
             questionnary = new Questionnary("game");
-
         }
+
+
     }
 }

@@ -15,9 +15,9 @@ namespace BusinessLayer.Mapping
         private Feature feature { get; set; }
         private int order { get; set; }
 
-        public Question( )
+        public Question()
         {
-           
+
         }
 
         public Question(int id, string description)
@@ -47,7 +47,7 @@ namespace BusinessLayer.Mapping
         public List<Answer> getAnswers(DAL.DAL dal)
         {
             List<Answer> listAnswer = new List<Answer>();
-            SqlDataReader answerReader = dal.executeProcedure("getAnswer") ;
+            SqlDataReader answerReader = dal.executeProcedure("getAnswer");
             while (answerReader.Read())
             {
                 Answer answer = new Answer();
@@ -60,8 +60,6 @@ namespace BusinessLayer.Mapping
             return listAnswer;
         }
 
-
-}
         internal void setFeature(Feature feature)
         {
             this.feature = feature;
@@ -71,5 +69,8 @@ namespace BusinessLayer.Mapping
         {
             this.order = order;
         }
+
+
     }
 }
+
