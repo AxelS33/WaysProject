@@ -8,3 +8,8 @@ C:\Users\utilisateur1\Documents\WaysProject\DAL\DAL\obj\Debug\DAL.dll
 C:\Users\utilisateur1\Documents\WaysProject\DAL\DAL\obj\Debug\DAL.pdb
 C:\Users\utilisateur1\Documents\WaysProject\DAL\DAL\bin\Debug\DAL.dll
 C:\Users\utilisateur1\Documents\WaysProject\DAL\DAL\bin\Debug\DAL.pdb
+C:\Users\Francky\Documents\WaysProject\DAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Francky\Documents\WaysProject\DAL\DAL\obj\Debug\DAL.dll
+C:\Users\Francky\Documents\WaysProject\DAL\DAL\obj\Debug\DAL.pdb
+C:\Users\Francky\Documents\WaysProject\DAL\DAL\bin\Debug\DAL.dll
+C:\Users\Francky\Documents\WaysProject\DAL\DAL\bin\Debug\DAL.pdb

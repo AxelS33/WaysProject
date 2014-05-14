@@ -8,3 +8,5 @@ C:\Users\utilisateur1\Documents\WaysProject\BusinessLayer\BusinessLayer\bin\Debu
 C:\Users\utilisateur1\Documents\WaysProject\BusinessLayer\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
 C:\Users\utilisateur1\Documents\WaysProject\BusinessLayer\BusinessLayer\obj\Debug\WC.dll
 C:\Users\utilisateur1\Documents\WaysProject\BusinessLayer\BusinessLayer\obj\Debug\WC.pdb
+C:\Users\Francky\Documents\WaysProject\BusinessLayer\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Francky\Documents\WaysProject\BusinessLayer\BusinessLayer\obj\Debug\WC.dll

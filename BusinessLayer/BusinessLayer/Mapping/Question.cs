@@ -20,6 +20,12 @@ namespace BusinessLayer.Mapping
            
         }
 
+        public Question(int id, string description)
+        {
+            this.id = id;
+            this.description = description;
+        }
+
 
         internal Feature getFeature()
         {
@@ -56,4 +62,14 @@ namespace BusinessLayer.Mapping
 
 
 }
+        internal void setFeature(Feature feature)
+        {
+            this.feature = feature;
+        }
+
+        internal void setOrder(int order)
+        {
+            this.order = order;
+        }
+    }
 }

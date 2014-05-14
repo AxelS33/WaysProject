@@ -16,3 +16,6 @@ C:\Users\utilisateur1\Documents\WaysProject\BAC\BAC\bin\Debug\DAL.pdb
 C:\Users\utilisateur1\Documents\WaysProject\BAC\BAC\obj\Debug\BAC.csprojResolveAssemblyReference.cache
 C:\Users\utilisateur1\Documents\WaysProject\BAC\BAC\obj\Debug\BAC.dll
 C:\Users\utilisateur1\Documents\WaysProject\BAC\BAC\obj\Debug\BAC.pdb
+C:\Users\Francky\Documents\WaysProject\BAC\BAC\obj\Debug\BAC.csprojResolveAssemblyReference.cache
+C:\Users\Francky\Documents\WaysProject\BAC\BAC\obj\Debug\BAC.dll
+C:\Users\Francky\Documents\WaysProject\BAC\BAC\obj\Debug\BAC.pdb
