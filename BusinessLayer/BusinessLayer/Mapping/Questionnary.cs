@@ -31,9 +31,10 @@ namespace BusinessLayer.Mapping
 
             while (reader.Read())
             {
-                Question question = new Question((int)reader["idQuestion"], (string)reader["descriptionQuestion"]);
+                Question question = new Question((int)reader["IdQuestion"], (string)reader["QuestionDescription"]);
                 question.setFeature(new Feature(this.typeQuestionnary));
-                question.setOrder((int)reader["questionOrder"]);
+                question.setOrder((int)reader["QuestionOrder"]);
+                question.getAnswers(dal);
 
                 listQuestion.Add(question);
             }
