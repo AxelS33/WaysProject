@@ -6,20 +6,25 @@ using System.Threading.Tasks;
 
 namespace Services
 {
-    public class WaysGame : Services
+    public class WaysGame : Service
     {
+        public WaysGame()
+        {
+
+        }
+
         public override StgMsg.StgMsg launchServices(StgMsg.StgMsg msg)
         {
             return msg;
         }
     }
 
-    private enum Functionalities
+    /*enum GameFunctionalities
     {
         Next = "nextQuestion",
         Previous = "previousQuestion",
         Launch = "launch",
         Validate = "validate",
         Score = "showScore",
-    }
+    }*/
 }

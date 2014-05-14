@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace Services
 {
-    public class Services
+    public class Service
     {
         protected BAC.BAC bac;
+
+        public Service()
+        {
+
+        }
 
         public virtual StgMsg.StgMsg launchServices(StgMsg.StgMsg msg)
         {
