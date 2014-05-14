@@ -1,1 +1,13 @@
 C:\Users\Axel\Documents\Wayz\WaysServices\WaysServices\obj\Debug\WaysServices.csprojResolveAssemblyReference.cache
+C:\Users\Axel\Documents\WaysProject\WaysServices\WaysServices\bin\Debug\WaysServices.dll.config
+C:\Users\Axel\Documents\WaysProject\WaysServices\WaysServices\bin\Debug\WaysServices.dll
+C:\Users\Axel\Documents\WaysProject\WaysServices\WaysServices\bin\Debug\WaysServices.pdb
+C:\Users\Axel\Documents\WaysProject\WaysServices\WaysServices\bin\Debug\Services.dll
+C:\Users\Axel\Documents\WaysProject\WaysServices\WaysServices\bin\Debug\StgMsg.dll
+C:\Users\Axel\Documents\WaysProject\WaysServices\WaysServices\bin\Debug\BAC.dll
+C:\Users\Axel\Documents\WaysProject\WaysServices\WaysServices\bin\Debug\Services.pdb
+C:\Users\Axel\Documents\WaysProject\WaysServices\WaysServices\bin\Debug\StgMsg.pdb
+C:\Users\Axel\Documents\WaysProject\WaysServices\WaysServices\bin\Debug\BAC.pdb
+C:\Users\Axel\Documents\WaysProject\WaysServices\WaysServices\obj\Debug\WaysServices.csprojResolveAssemblyReference.cache
+C:\Users\Axel\Documents\WaysProject\WaysServices\WaysServices\obj\Debug\WaysServices.dll
+C:\Users\Axel\Documents\WaysProject\WaysServices\WaysServices\obj\Debug\WaysServices.pdb
