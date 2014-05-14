@@ -3,3 +3,8 @@ C:\Users\Axel\Documents\Wayz\DAL\DAL\bin\Debug\DAL.pdb
 C:\Users\Axel\Documents\Wayz\DAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\Axel\Documents\Wayz\DAL\DAL\obj\Debug\DAL.dll
 C:\Users\Axel\Documents\Wayz\DAL\DAL\obj\Debug\DAL.pdb
+C:\Users\utilisateur1\Documents\WaysProject\DAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\utilisateur1\Documents\WaysProject\DAL\DAL\obj\Debug\DAL.dll
+C:\Users\utilisateur1\Documents\WaysProject\DAL\DAL\obj\Debug\DAL.pdb
+C:\Users\utilisateur1\Documents\WaysProject\DAL\DAL\bin\Debug\DAL.dll
+C:\Users\utilisateur1\Documents\WaysProject\DAL\DAL\bin\Debug\DAL.pdb

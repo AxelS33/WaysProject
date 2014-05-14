@@ -8,9 +8,9 @@ namespace BusinessLayer.Mapping
 {
     class Feature
     {
-        private int id { get; set; }
-        private string name { get; set; }
-        private int weight {get; set;}
+        private int id;
+        private string name;
+        private int weight;
 
         public Feature()
         {
@@ -27,5 +27,25 @@ namespace BusinessLayer.Mapping
             this.weight = weight;
         }
 
+
+        internal void setId(int id)
+        {
+            this.id = id;
+        }
+
+        internal void setName(string name)
+        {
+            this.name = name;
+        }
+
+        internal void setWeight(int weight)
+        {
+            this.weight = weight;
+        }
+
+        public int getWeight()
+        {
+            return this.weight;
+        }
     }
 }

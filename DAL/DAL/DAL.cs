@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,40 +9,42 @@ namespace DAL
 {
     public class DAL : IDAL
     {
-        private string sqlQuery;
-        private System.Data.OleDb.OleDbConnection connection;
-        private System.Data.OleDb.OleDbCommand command;
-        private System.Data.OleDb.OleDbDataAdapter dataAdapter;
-        private System.Data.DataSet dataSet;
+        private string strConnection;
+        private SqlConnection connection;
+        private SqlCommand cmd;
 
         public DAL()
         {
-            this.sqlQuery = "NC";
-            this.connection = new System.Data.OleDb.OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;" +
-            @"Data Source=C:\Users\utilisateur1\Documents\Visual Studio 2012\Projects\Prosit6\BDDcocktail.mdb");
-            this.command = new System.Data.OleDb.OleDbCommand();
-            this.dataAdapter = new System.Data.OleDb.OleDbDataAdapter();
+            try
+            {
+                this.strConnection = "chaine cryptee qui vient de xml !!";
+                this.connection = new SqlConnection(this.strConnection);
+            }
+            catch (Exception ConnectionFail)
+            {
+                throw ConnectionFail;
+            }
         }
 
-        public System.Data.DataSet getRows(string sqlQuery, string rowsName)
+        public SqlDataReader executeProcedure(String procedureName)
         {
-            this.dataSet = new System.Data.DataSet();
-            this.sqlQuery = sqlQuery;
-            this.command.Connection = this.connection;
-            this.command.CommandText = this.sqlQuery;
-            this.dataAdapter.SelectCommand = this.command;
-            this.dataAdapter.Fill(this.dataSet, rowsName);
-            return this.dataSet;
+            connection.Open();
+            this.cmd = new SqlCommand();
+            this.cmd.Connection = this.connection;
+
+            this.cmd.CommandText = procedureName;
+            this.cmd.CommandType = System.Data.CommandType.StoredProcedure;
+
+            SqlDataReader reader = cmd.ExecuteReader();
+            connection.Close();
+            return reader;
         }
 
-        public void actionsRows(string sqlQuery)
+        public SqlDataReader executeWithParameter(String procedureName)
         {
-            this.sqlQuery = sqlQuery;
-            this.command.Connection = this.connection;
-            this.command.CommandText = this.sqlQuery;
-            this.connection.Open();
-            this.command.ExecuteNonQuery();
-            this.connection.Close();
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            return reader;
         }
     }
 }

@@ -1,1 +1,10 @@
 C:\Users\Axel\Documents\Wayz\BusinessLayer\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\utilisateur1\Documents\WaysProject\BusinessLayer\BusinessLayer\bin\Debug\WC.dll
+C:\Users\utilisateur1\Documents\WaysProject\BusinessLayer\BusinessLayer\bin\Debug\WC.pdb
+C:\Users\utilisateur1\Documents\WaysProject\BusinessLayer\BusinessLayer\bin\Debug\DAL.dll
+C:\Users\utilisateur1\Documents\WaysProject\BusinessLayer\BusinessLayer\bin\Debug\StgMsg.dll
+C:\Users\utilisateur1\Documents\WaysProject\BusinessLayer\BusinessLayer\bin\Debug\DAL.pdb
+C:\Users\utilisateur1\Documents\WaysProject\BusinessLayer\BusinessLayer\bin\Debug\StgMsg.pdb
+C:\Users\utilisateur1\Documents\WaysProject\BusinessLayer\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\utilisateur1\Documents\WaysProject\BusinessLayer\BusinessLayer\obj\Debug\WC.dll
+C:\Users\utilisateur1\Documents\WaysProject\BusinessLayer\BusinessLayer\obj\Debug\WC.pdb
