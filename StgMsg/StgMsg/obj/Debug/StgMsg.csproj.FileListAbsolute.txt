@@ -1,0 +1,5 @@
+C:\Users\Axel\Documents\Wayz\StgMsg\StgMsg\obj\Debug\StgMsg.csprojResolveAssemblyReference.cache
+C:\Users\Axel\Documents\Wayz\StgMsg\StgMsg\bin\Debug\StgMsg.dll
+C:\Users\Axel\Documents\Wayz\StgMsg\StgMsg\bin\Debug\StgMsg.pdb
+C:\Users\Axel\Documents\Wayz\StgMsg\StgMsg\obj\Debug\StgMsg.dll
+C:\Users\Axel\Documents\Wayz\StgMsg\StgMsg\obj\Debug\StgMsg.pdb

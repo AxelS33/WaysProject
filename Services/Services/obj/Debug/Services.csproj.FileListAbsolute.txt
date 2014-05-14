@@ -1,0 +1,5 @@
+C:\Users\Axel\Documents\Wayz\Services\Services\bin\Debug\Services.dll
+C:\Users\Axel\Documents\Wayz\Services\Services\bin\Debug\Services.pdb
+C:\Users\Axel\Documents\Wayz\Services\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
+C:\Users\Axel\Documents\Wayz\Services\Services\obj\Debug\Services.dll
+C:\Users\Axel\Documents\Wayz\Services\Services\obj\Debug\Services.pdb
