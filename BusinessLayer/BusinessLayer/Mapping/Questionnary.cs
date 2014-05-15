@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Mapping
 {
-    class Questionnary
+    public class Questionnary
     {
         private List<Question> listQuestion;
         private string typeQuestionnary;
@@ -31,10 +31,9 @@ namespace BusinessLayer.Mapping
 
             while (reader.Read())
             {
-                Question question = new Question((int)reader["IdQuestion"], (string)reader["QuestionDescription"]);
+                Question question = new Question((int)reader["idQuestion"], (string)reader["descriptionQuestion"]);
                 question.setFeature(new Feature(this.typeQuestionnary));
-                question.setOrder((int)reader["QuestionOrder"]);
-                question.getAnswers(dal);
+                question.setOrder((int)reader["questionOrder"]);
 
                 listQuestion.Add(question);
             }

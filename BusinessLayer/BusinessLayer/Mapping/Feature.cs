@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Mapping
 {
-    class Feature
+    public class Feature
     {
-        private int id;
-        private string name;
-        private int weight;
+        public int id { get; set; }
+        public string name{ get; set; }
+        public int weight { get; set; }
 
         public Feature()
         {
@@ -32,11 +32,6 @@ namespace BusinessLayer.Mapping
         internal void setId(int id)
         {
             this.id = id;
-        }
-
-        internal String getName()
-        {
-            return this.name;
         }
 
         internal void setName(string name)
