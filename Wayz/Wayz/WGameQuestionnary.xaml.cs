@@ -67,9 +67,11 @@ namespace Wayz
 
         private void BtnFinalResult_Click(object sender, RoutedEventArgs e)
         {
-            WGameFinalResult oFFinalResult = new WGameFinalResult();
+            this.addScorePlayer(this.scoretmp);
+            MessageBox.Show(this.player.getScore().ToString());
+            /*WGameFinalResult oFFinalResult = new WGameFinalResult();
             oFFinalResult.Show();
-            this.Close();
+            this.Close();*/
         }
 
         private void setQuestion(int order)
@@ -140,6 +142,7 @@ namespace Wayz
 
             Wayz.WGameQuestionnary next = new WGameQuestionnary(this.msg);
             next.Show();
+            this.Close();
         }
 
         private void addScorePlayer(int score)
