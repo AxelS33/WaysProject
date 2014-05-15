@@ -19,3 +19,11 @@ C:\Users\utilisateur1\Documents\WaysProject\BAC\BAC\obj\Debug\BAC.pdb
 C:\Users\Francky\Documents\WaysProject\BAC\BAC\obj\Debug\BAC.csprojResolveAssemblyReference.cache
 C:\Users\Francky\Documents\WaysProject\BAC\BAC\obj\Debug\BAC.dll
 C:\Users\Francky\Documents\WaysProject\BAC\BAC\obj\Debug\BAC.pdb
+C:\Users\Francky\Documents\WaysProject\BAC\BAC\bin\Debug\BAC.dll
+C:\Users\Francky\Documents\WaysProject\BAC\BAC\bin\Debug\BAC.pdb
+C:\Users\Francky\Documents\WaysProject\BAC\BAC\bin\Debug\StgMsg.dll
+C:\Users\Francky\Documents\WaysProject\BAC\BAC\bin\Debug\WC.dll
+C:\Users\Francky\Documents\WaysProject\BAC\BAC\bin\Debug\DAL.dll
+C:\Users\Francky\Documents\WaysProject\BAC\BAC\bin\Debug\WC.pdb
+C:\Users\Francky\Documents\WaysProject\BAC\BAC\bin\Debug\StgMsg.pdb
+C:\Users\Francky\Documents\WaysProject\BAC\BAC\bin\Debug\DAL.pdb
