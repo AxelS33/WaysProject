@@ -1,0 +1,9 @@
+C:\Users\Adrien\Documents\WaysProject\client\client\bin\Debug\client.dll
+C:\Users\Adrien\Documents\WaysProject\client\client\bin\Debug\client.pdb
+C:\Users\Adrien\Documents\WaysProject\client\client\bin\Debug\StgMsg.dll
+C:\Users\Adrien\Documents\WaysProject\client\client\bin\Debug\StgMsg.pdb
+C:\Users\Adrien\Documents\WaysProject\client\client\obj\Debug\client.csprojResolveAssemblyReference.cache
+C:\Users\Adrien\Documents\WaysProject\client\client\obj\Debug\client.dll
+C:\Users\Adrien\Documents\WaysProject\client\client\obj\Debug\client.pdb
+C:\Users\Adrien\Documents\WaysProject\client\client\bin\Debug\Mapping.dll
+C:\Users\Adrien\Documents\WaysProject\client\client\bin\Debug\Mapping.pdb

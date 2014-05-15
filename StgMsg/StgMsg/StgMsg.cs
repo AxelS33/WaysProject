@@ -19,7 +19,6 @@ namespace StgMsg
 
         public StgMsg()
         {
-
         }
 
     }
