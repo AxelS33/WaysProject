@@ -5,6 +5,9 @@ C:\Users\Axel\Documents\Wayz\StgMsg\StgMsg\obj\Debug\StgMsg.dll
 C:\Users\Axel\Documents\Wayz\StgMsg\StgMsg\obj\Debug\StgMsg.pdb
 C:\Users\utilisateur1\Documents\WaysProject\StgMsg\StgMsg\bin\Debug\StgMsg.dll
 C:\Users\utilisateur1\Documents\WaysProject\StgMsg\StgMsg\bin\Debug\StgMsg.pdb
-C:\Users\utilisateur1\Documents\WaysProject\StgMsg\StgMsg\obj\Debug\StgMsg.csprojResolveAssemblyReference.cache
 C:\Users\utilisateur1\Documents\WaysProject\StgMsg\StgMsg\obj\Debug\StgMsg.dll
 C:\Users\utilisateur1\Documents\WaysProject\StgMsg\StgMsg\obj\Debug\StgMsg.pdb
+C:\Users\Adrien\Documents\WaysProject\StgMsg\StgMsg\bin\Debug\StgMsg.dll
+C:\Users\Adrien\Documents\WaysProject\StgMsg\StgMsg\bin\Debug\StgMsg.pdb
+C:\Users\Adrien\Documents\WaysProject\StgMsg\StgMsg\obj\Debug\StgMsg.dll
+C:\Users\Adrien\Documents\WaysProject\StgMsg\StgMsg\obj\Debug\StgMsg.pdb

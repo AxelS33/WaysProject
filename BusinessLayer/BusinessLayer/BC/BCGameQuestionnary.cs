@@ -26,6 +26,7 @@ namespace BusinessLayer.BC
         {
             player = (Player)msg.data[0];
             //player.createPlayer(player, dal);
+            player.createPlayer(dal);
             
             return msg;
         }

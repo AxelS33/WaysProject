@@ -49,6 +49,10 @@
       <Project>{d84e3a15-7048-45d6-9487-0a70eac10733}</Project>
       <Name>StgMsg</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Wayz\Mapping\Mapping.csproj">
+      <Project>{90b1afb5-d5b4-4cfb-80e9-2e46ce0e47ed}</Project>
+      <Name>Mapping</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

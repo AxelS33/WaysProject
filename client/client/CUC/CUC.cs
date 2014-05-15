@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace client.CUC
 {
-    class CUC
+    public class CUC
     {
         private string AppName;
         private string pSecurity;
-        StgMsg.StgMsg msg;
-
 
         public CUC()
         {
@@ -19,10 +17,11 @@ namespace client.CUC
             pSecurity = "123";
         }
 
-        public void callService(){
-            msg = new StgMsg.StgMsg();
+        public StgMsg.StgMsg callService(StgMsg.StgMsg msg){
             msg.appName = this.AppName;
             msg.pSecurity = this.pSecurity;
+
+            return msg;
         }
     }
 }

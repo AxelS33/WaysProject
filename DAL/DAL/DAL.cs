@@ -17,7 +17,7 @@ namespace DAL
         {
             try
             {
-                this.strConnection = "chaine cryptee qui vient de xml !!";
+                this.strConnection = "Data Source='nomserveur';Initial Catalog='nombdd';UID='nomconnection';PWD='pwd';";
                 this.connection = new SqlConnection(this.strConnection);
             }
             catch (Exception ConnectionFail)
