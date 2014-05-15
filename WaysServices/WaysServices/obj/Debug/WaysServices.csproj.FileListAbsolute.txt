@@ -35,3 +35,7 @@ C:\Users\Francky\Documents\WaysProject\WaysServices\WaysServices\bin\Debug\BAC.p
 C:\Users\Francky\Documents\WaysProject\WaysServices\WaysServices\obj\Debug\WaysServices.csprojResolveAssemblyReference.cache
 C:\Users\Francky\Documents\WaysProject\WaysServices\WaysServices\obj\Debug\WaysServices.dll
 C:\Users\Francky\Documents\WaysProject\WaysServices\WaysServices\obj\Debug\WaysServices.pdb
+C:\Users\Francky\Documents\WaysProject\WaysServices\WaysServices\bin\Debug\WC.dll
+C:\Users\Francky\Documents\WaysProject\WaysServices\WaysServices\bin\Debug\DAL.dll
+C:\Users\Francky\Documents\WaysProject\WaysServices\WaysServices\bin\Debug\WC.pdb
+C:\Users\Francky\Documents\WaysProject\WaysServices\WaysServices\bin\Debug\DAL.pdb

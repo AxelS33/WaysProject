@@ -60,7 +60,7 @@ namespace BusinessLayer.BC
                     break;
                 }
             }
-           // questionPicked.listAnswer = questionPicked.getAnswers(dal);
+           //**COMMENTE POUR TEST questionPicked.listAnswer = questionPicked.getAnswers(dal);
             return questionPicked;
             
         }

@@ -30,3 +30,7 @@ C:\Users\Francky\Documents\WaysProject\Services\Services\bin\Debug\StgMsg.pdb
 C:\Users\Francky\Documents\WaysProject\Services\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
 C:\Users\Francky\Documents\WaysProject\Services\Services\obj\Debug\Services.dll
 C:\Users\Francky\Documents\WaysProject\Services\Services\obj\Debug\Services.pdb
+C:\Users\Francky\Documents\WaysProject\Services\Services\bin\Debug\WC.dll
+C:\Users\Francky\Documents\WaysProject\Services\Services\bin\Debug\DAL.dll
+C:\Users\Francky\Documents\WaysProject\Services\Services\bin\Debug\WC.pdb
+C:\Users\Francky\Documents\WaysProject\Services\Services\bin\Debug\DAL.pdb

@@ -19,3 +19,10 @@ H:\WaysProject\BusinessLayer\BusinessLayer\bin\Debug\StgMsg.dll
 H:\WaysProject\BusinessLayer\BusinessLayer\bin\Debug\DAL.pdb
 H:\WaysProject\BusinessLayer\BusinessLayer\bin\Debug\StgMsg.pdb
 H:\WaysProject\BusinessLayer\BusinessLayer\obj\Debug\WC.pdb
+C:\Users\Francky\Documents\WaysProject\BusinessLayer\BusinessLayer\bin\Debug\WC.dll
+C:\Users\Francky\Documents\WaysProject\BusinessLayer\BusinessLayer\bin\Debug\WC.pdb
+C:\Users\Francky\Documents\WaysProject\BusinessLayer\BusinessLayer\bin\Debug\DAL.dll
+C:\Users\Francky\Documents\WaysProject\BusinessLayer\BusinessLayer\bin\Debug\StgMsg.dll
+C:\Users\Francky\Documents\WaysProject\BusinessLayer\BusinessLayer\bin\Debug\DAL.pdb
+C:\Users\Francky\Documents\WaysProject\BusinessLayer\BusinessLayer\bin\Debug\StgMsg.pdb
+C:\Users\Francky\Documents\WaysProject\BusinessLayer\BusinessLayer\obj\Debug\WC.pdb
