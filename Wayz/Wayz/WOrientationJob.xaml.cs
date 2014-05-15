@@ -24,6 +24,26 @@ namespace Wayz
             InitializeComponent();
         }
 
+        private void BtnMainMenu_Click(object sender, RoutedEventArgs e)
+        {
+            WMainMenuUser oFMainMenu = new WMainMenuUser();
+            oFMainMenu.Show();
+            this.Close();
+        }
+
+        private void BtnSend_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult dialogResult = MessageBox.Show("Do you want to send your mail ?", "Mail in progress", MessageBoxButton.YesNo);
+            if (dialogResult == MessageBoxResult.Yes)
+            {
+                //do something
+            }
+            else if (dialogResult == MessageBoxResult.No)
+            {
+                //do something else
+            }
+        }
+
 
     }
 }

@@ -23,5 +23,12 @@ namespace Wayz
         {
             InitializeComponent();
         }
+
+        private void BtnSend_Click(object sender, RoutedEventArgs e)
+        {
+            WOrientationJob oFOrientation = new WOrientationJob();
+            oFOrientation.Show();
+            this.Close();
+        }
     }
 }

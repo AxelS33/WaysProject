@@ -35,5 +35,154 @@ C:\Users\Adrien\Desktop\Exia\2ème année\DOT NET\Projet\Visual studio\Wayz\Wayz
 C:\Users\Adrien\Desktop\Exia\2ème année\DOT NET\Projet\Visual studio\Wayz\Wayz\obj\Debug\WMainMenuAdmin.g.cs
 C:\Users\Adrien\Desktop\Exia\2ème année\DOT NET\Projet\Visual studio\Wayz\Wayz\obj\Debug\WOrientationFinalResult.g.cs
 C:\Users\Adrien\Desktop\Exia\2ème année\DOT NET\Projet\Visual studio\Wayz\Wayz\obj\Debug\WOrientationJob.g.cs
-C:\Users\utilisateur1\Documents\WaysProject\Wayz\Wayz\bin\Debug\Wayz.exe.config
-C:\Users\utilisateur1\Documents\WaysProject\Wayz\Wayz\obj\Debug\Wayz.exe
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\bin\Debug\Wayz.exe.config
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\Wayz.exe
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\Wayz.csprojResolveAssemblyReference.cache
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\WGameAddQuestion.baml
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\WGameAdmin.baml
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\WGameFinalResult.baml
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\WGameHelpUs.baml
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\WGameKnowledge.baml
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\WGameOrganization.baml
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\WGameQuestionMenu.baml
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\WGameQuestionnary.baml
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\MainWindow.baml
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\WMainMenuAdmin.baml
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\WMainMenuUser.baml
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\WOrientationFinalResult.baml
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\WOrientationJob.baml
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\WOrientationQuestionnary.baml
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\WGameAddQuestion.g.cs
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\WGameAdmin.g.cs
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\WGameFinalResult.g.cs
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\WGameHelpUs.g.cs
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\WGameKnowledge.g.cs
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\WGameOrganization.g.cs
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\WGameQuestionMenu.g.cs
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\WGameQuestionnary.g.cs
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\MainWindow.g.cs
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\WMainMenuAdmin.g.cs
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\WMainMenuUser.g.cs
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\WOrientationFinalResult.g.cs
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\WOrientationJob.g.cs
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\WOrientationQuestionnary.g.cs
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\App.g.cs
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\Wayz_MarkupCompile.cache
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\Wayz.g.resources
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\Wayz.Properties.Resources.resources
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\Wayz.csproj.GenerateResource.Cache
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\bin\Debug\Wayz.exe
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\bin\Debug\Wayz.pdb
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\Wayz.pdb
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\WOrientationAdmin.baml
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\WOrientationEmailAccount.baml
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\WOrientationQuestionMenu.baml
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\WOrientationAdmin.g.cs
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\WOrientationEmailAccount.g.cs
+C:\Users\utilisateur\Documents\WaysProject\Wayz\Wayz\obj\Debug\WOrientationQuestionMenu.g.cs
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\bin\Debug\Wayz.exe.config
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\Wayz.exe
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\Wayz.pdb
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\Wayz.csprojResolveAssemblyReference.cache
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WGameAddQuestion.baml
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WGameAdmin.baml
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WGameFinalResult.baml
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WGameHelpUs.baml
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WGameKnowledge.baml
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WGameOrganization.baml
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WGameQuestionMenu.baml
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WGameQuestionnary.baml
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\MainWindow.baml
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WGameUpdateQuestion.baml
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WGradingScale.baml
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WMainMenuAdmin.baml
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WMainMenuUser.baml
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WOrganizeQuestionnary.baml
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WOrientationAdmin.baml
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WOrientationEmailAccount.baml
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WOrientationFinalResult.baml
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WOrientationJob.baml
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WOrientationQuestionMenu.baml
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WOrientationQuestionnary.baml
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WGameAddQuestion.g.cs
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WGameAdmin.g.cs
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WGameFinalResult.g.cs
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WGameHelpUs.g.cs
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WGameKnowledge.g.cs
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WGameOrganization.g.cs
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WGameQuestionMenu.g.cs
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WGameQuestionnary.g.cs
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\MainWindow.g.cs
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WGameUpdateQuestion.g.cs
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WGradingScale.g.cs
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WMainMenuAdmin.g.cs
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WMainMenuUser.g.cs
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WOrganizeQuestionnary.g.cs
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WOrientationAdmin.g.cs
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WOrientationEmailAccount.g.cs
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WOrientationFinalResult.g.cs
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WOrientationJob.g.cs
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WOrientationQuestionMenu.g.cs
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\WOrientationQuestionnary.g.cs
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\App.g.cs
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\Wayz_MarkupCompile.cache
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\Wayz.g.resources
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\Wayz.Properties.Resources.resources
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\obj\Debug\Wayz.csproj.GenerateResource.Cache
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\bin\Debug\Wayz.exe
+E:\eXia\A2\Projet\Projet .net Ways\Wayz\Wayz\bin\Debug\Wayz.pdb
+G:\PROJET WAYS BDD\Wayz\Wayz\bin\Debug\Wayz.exe.config
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\Wayz.exe
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\Wayz.pdb
+G:\PROJET WAYS BDD\Wayz\Wayz\bin\Debug\Wayz.exe
+G:\PROJET WAYS BDD\Wayz\Wayz\bin\Debug\Wayz.pdb
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\Wayz.csprojResolveAssemblyReference.cache
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WGameAddQuestion.baml
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WGameAdmin.baml
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WGameFinalResult.baml
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WGameHelpUs.baml
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WGameKnowledge.baml
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WGameOrganization.baml
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WGameQuestionMenu.baml
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WGameQuestionnary.baml
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\MainWindow.baml
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WGameUpdateQuestion.baml
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WGradingScale.baml
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WMainMenuAdmin.baml
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WMainMenuUser.baml
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WOrganizeQuestionnary.baml
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WOrientationAddQuestion.baml
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WOrientationAdmin.baml
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WOrientationEmailAccount.baml
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WOrientationFinalResult.baml
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WOrientationJob.baml
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WOrientationQuestionMenu.baml
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WOrientationQuestionnary.baml
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WOrientationUpdateQuestion.baml
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WGameAddQuestion.g.cs
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WGameAdmin.g.cs
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WGameFinalResult.g.cs
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WGameHelpUs.g.cs
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WGameKnowledge.g.cs
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WGameOrganization.g.cs
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WGameQuestionMenu.g.cs
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WGameQuestionnary.g.cs
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\MainWindow.g.cs
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WGameUpdateQuestion.g.cs
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WGradingScale.g.cs
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WMainMenuAdmin.g.cs
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WMainMenuUser.g.cs
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WOrganizeQuestionnary.g.cs
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WOrientationAddQuestion.g.cs
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WOrientationAdmin.g.cs
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WOrientationEmailAccount.g.cs
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WOrientationFinalResult.g.cs
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WOrientationJob.g.cs
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WOrientationQuestionMenu.g.cs
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WOrientationQuestionnary.g.cs
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\WOrientationUpdateQuestion.g.cs
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\App.g.cs
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\Wayz_MarkupCompile.cache
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\Wayz.g.resources
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\Wayz.Properties.Resources.resources
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\Wayz.csproj.GenerateResource.Cache

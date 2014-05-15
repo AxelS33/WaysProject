@@ -11,7 +11,6 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using System.Windows.Forms;
 
 namespace Wayz
 {
@@ -25,9 +24,45 @@ namespace Wayz
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void BtnLogout_Click(object sender, RoutedEventArgs e)
         {
-            System.Windows.Forms.MessageBox.Show("My message here #pro #English");
+            this.Close();
         }
+
+        private void BtnUpdate_Click(object sender, RoutedEventArgs e)
+        {
+            WGameUpdateQuestion oFGameUpdate = new WGameUpdateQuestion();
+            oFGameUpdate.Show();
+            this.Close();
+        }
+
+        private void BtnAdd_Click(object sender, RoutedEventArgs e)
+        {
+            WGameAddQuestion oFGameAdd = new WGameAddQuestion();
+            oFGameAdd.Show();
+            this.Close();
+        }
+
+        private void BtnDelete_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult dialogResult = MessageBox.Show("Sure", "Some Title", MessageBoxButton.YesNo);
+            if (dialogResult == MessageBoxResult.Yes)
+            {
+                //do something
+            }
+            else if (dialogResult == MessageBoxResult.No)
+            {
+                //do something else
+            }
+        }
+
+        private void BtnMainMenu_Click(object sender, RoutedEventArgs e)
+        {
+            WMainMenuAdmin oFMainMenu = new WMainMenuAdmin();
+            oFMainMenu.Show();
+            this.Close();
+        }
+
+
     }
 }

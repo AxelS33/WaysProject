@@ -23,5 +23,12 @@ namespace Wayz
         {
             InitializeComponent();
         }
+
+        private void BtnSend_Click(object sender, RoutedEventArgs e)
+        {
+            WGameKnowledge oFKnowledge = new WGameKnowledge();
+            oFKnowledge.Show();
+            this.Close();
+        }
     }
 }
