@@ -3,20 +3,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BusinessLayer.WC;
+
 
 namespace BAC
 {
     public class BAC : Ibac
     {
+
+
+        private WCQuestionnary workflowControler;
+
         public StgMsg.StgMsg redirect(StgMsg.StgMsg msg)
         {
+            
             switch (msg.invoke)
             {
                 case "nextQuestionWaysOriention":
+                    this.workflowControler = new WCQuestionnary();
+                    this.workflowControler.weightProfile(msg);
                     break;
                 case "launchWaysOriention":
+                    this.workflowControler = new WCQuestionnary();
+                    this.workflowControler.setProfile(msg);
                     break;
                 case "validateWaysOriention":
+                    this.workflowControler = new WCQuestionnary();
+                    this.workflowControler.compareFeature(msg);
                     break;
                 case "nextQuestionWaysGame":
                     break;

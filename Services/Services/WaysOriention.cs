@@ -8,14 +8,21 @@ namespace Services
 {
     public class WaysOriention : Service
     {
+
+        public List<String> listeInvoke;
         public WaysOriention()
         {
+            this.listeInvoke = new List<string>();
+            listeInvoke.Add("nextQuestion");
+            listeInvoke.Add("launch");
+            listeInvoke.Add("validate");
+            listeInvoke.Add("sendMail");
 
         }
 
         public override StgMsg.StgMsg launchServices(StgMsg.StgMsg msg)
         {
-            /*foreach (string value in Enum.GetValues(typeof(OrientationFunctionalities)))
+            foreach (string value in this.listeInvoke)
             {
                 if (value == msg.invoke)
                 {
@@ -25,7 +32,7 @@ namespace Services
                     this.bac.redirect(msg);
                     return msg;
                 }
-            }*/
+            }
 
             msg.statut = false;
             return msg;
