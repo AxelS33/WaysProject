@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -10,14 +12,14 @@ namespace DAL
     public class DAL : IDAL
     {
         private string strConnection;
-        private SqlConnection connection;
+        public SqlConnection connection { get; set; }
         private SqlCommand cmd;
 
         public DAL()
         {
             try
             {
-                this.strConnection = "Data Source='nomserveur';Initial Catalog='nombdd';UID='nomconnection';PWD='pwd';";
+                this.strConnection = "Server=WIN-SOLOQ4BCPNR; Database=DataWays; User Id=Database_Owner ; Password=Admin2014;";
                 this.connection = new SqlConnection(this.strConnection);
             }
             catch (Exception ConnectionFail)
@@ -25,10 +27,14 @@ namespace DAL
                 throw ConnectionFail;
             }
         }
+        public void OpenConnection()
+        {
+            this.connection.Open();
+        }
 
         public SqlDataReader executeProcedure(String procedureName)
         {
-            connection.Open();
+            
             this.cmd = new SqlCommand();    
             this.cmd.Connection = this.connection;
 
@@ -36,15 +42,75 @@ namespace DAL
             this.cmd.CommandType = System.Data.CommandType.StoredProcedure;
 
             SqlDataReader reader = cmd.ExecuteReader();
-            connection.Close();
+            
             return reader;
         }
-
-        public SqlDataReader executeWithParameter(String procedureName, List<Object> parameters)
+        public void closeConnection()
         {
-            SqlDataReader reader = cmd.ExecuteReader();
+            this.connection.Close();
+        }
 
-            return reader;
+        public void executeWithParameter(String procedureName, List<object[]> parameters)
+        {
+           
+           
+            this.cmd = new SqlCommand();
+            this.cmd.Connection = this.connection;
+
+            this.cmd.CommandText = procedureName;
+            this.cmd.CommandType = System.Data.CommandType.StoredProcedure;
+
+            List<SqlParameter> listParameters = new List<SqlParameter>();
+            foreach(object[] o in parameters)
+            {
+                SqlParameter param = new SqlParameter(o[0].ToString(), o[1].GetType());
+                param.Direction = ParameterDirection.Input;
+                param.Value = o[1];
+                listParameters.Add(param);
+            }
+
+            foreach (SqlParameter param in listParameters)
+            {
+               this.cmd.ExecuteNonQuery();
+            }
+            this.connection.Close();
+            
+          
+        }
+
+        public SqlDataReader queryWithParameter(String procedureName, object[] parameters)
+        {
+            
+            this.connection.Open();
+
+            this.cmd = new SqlCommand();
+            this.cmd.Connection = this.connection;
+
+            this.cmd.CommandText = procedureName;
+            this.cmd.CommandType = System.Data.CommandType.StoredProcedure;
+
+            SqlDbType dbt = new SqlDbType();
+            Type typeParam = parameters[1].GetType();
+            switch (typeParam.FullName)
+            {
+                case "System.Int32": dbt = SqlDbType.Int;
+                    break;
+                case "System.Int16": dbt = SqlDbType.Int;
+                    break;
+                case "System.String": dbt = SqlDbType.NVarChar;
+                    break;
+                default: dbt = SqlDbType.NVarChar;
+                    break;
+            }
+          
+                SqlParameter param = new SqlParameter(parameters[0].ToString(), SqlDbType.NVarChar);
+                param.Direction = ParameterDirection.Input;
+                param.Value = parameters[1];
+                cmd.Parameters.Add(param);
+                SqlDataReader reader = this.cmd.ExecuteReader();
+                return reader;
+            
+
         }
     }
 }

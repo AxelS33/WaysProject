@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace BusinessLayer.Mapping
 {
    public class Question
     {
-        private int id { get; set; }
+        public int id { get; set; }
         private string description { get; set; }
         public List<Answer> listAnswer { get; set; }
         public Feature feature { get; set; }
@@ -18,7 +19,9 @@ namespace BusinessLayer.Mapping
 
         public Question()
         {
-
+            this.listAnswer = new List<Answer>();
+            this.feature = new Feature();
+            this.pickedAnswer = new Answer();
         }
 
         public Question(int id, string description)
@@ -34,22 +37,36 @@ namespace BusinessLayer.Mapping
         }
 
 
-
+       //***récupére la liste de toutes les questions dans la base***//
         internal List<Question> getAllQuestion(DAL.DAL dal)
         {
             //***REAL CODE***//
-            List<Question> listQuestion= new List<Question>();
-            SqlDataReader readerQuestion = dal.executeProcedure("getAllQuestion");
+           List<Question> listQuestion= new List<Question>();
+           object[] param = new object[2]; 
+           param[0] = "@TypeName";
+           param[1] = "Orientation";
+           SqlDataReader readerQuestion = dal.queryWithParameter("AllQuestions",param);
 
-            while (readerQuestion.Read())
+           dal.OpenConnection();
+           readerQuestion.Read();
+             while(readerQuestion.Read())
             {
                 Question question = new Question();
                 question.id = (int)readerQuestion["idQuestion"];
                 question.listAnswer = this.getAnswers(dal, question.id);
-                
+                question.description = (string)readerQuestion["descriptionQuestion"];
+                question.feature = this.getFeatureOfQuestion(dal, question.id);
+                question.order = (int)readerQuestion["orderQuestion"];
+                listQuestion.Add(question);
             }
+             readerQuestion.Close();
+             dal.closeConnection();
+             
+            
+          
+
             //**TEST CODE**//
-            int cpt = 0;
+           /* int cpt = 0;
             while (cpt < 10)
             {
                 Question a = new Question();
@@ -57,8 +74,26 @@ namespace BusinessLayer.Mapping
                 a.id = 1;
                 listQuestion.Add(a);
                 cpt++;
-            }
+            }*/
             return listQuestion;
+        }
+
+        private Feature getFeatureOfQuestion(DAL.DAL dal, int idQuestion)
+        {
+           /* Hashtable parameter = new Hashtable();
+            parameter.Add("@IdQuestion", idQuestion);
+            SqlDataReader readerFeature = dal.queryWithParameter("GetAnswers", parameter);
+
+           Feature featureofQuestion = new Feature();
+           while (readerFeature.Read())
+           {
+               featureofQuestion.id = (int) readerFeature["idFeature"];
+               featureofQuestion.name = (string)readerFeature["nameFeature"];
+               featureofQuestion.weight = 0;
+           }
+           
+           return featureofQuestion; */
+            return null;
         }
 
         internal object getId()
@@ -69,10 +104,14 @@ namespace BusinessLayer.Mapping
         public List<Answer> getAnswers(DAL.DAL dal, int idQuestion)
         {
             List<Answer> listAnswer = new List<Answer>();
-            List<object> parameter = new List<object>();
-            parameter.Add(idQuestion);
 
-            SqlDataReader answerReader = dal.executeWithParameter("GetAnswerByIdQuestion", parameter);
+           object[] parameter = new object[2];
+           parameter[0] = "@IdQuestion";
+           parameter[1] = idQuestion;
+
+           dal.OpenConnection();
+            SqlDataReader answerReader = dal.queryWithParameter("GetAnswers", parameter);
+            answerReader.Read();
             while (answerReader.Read())
             {
                 Answer answer = new Answer();
@@ -82,6 +121,8 @@ namespace BusinessLayer.Mapping
                 listAnswer.Add(answer);
             }
             answerReader.Close();
+            dal.closeConnection();
+
             return listAnswer;
         }
 

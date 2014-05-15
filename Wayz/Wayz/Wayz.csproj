@@ -34,6 +34,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\client\client\bin\Debug\client.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -253,10 +257,6 @@
     <Resource Include="twitter_exia1.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\client\client\client.csproj">
-      <Project>{8a47780e-b566-4884-9b8e-a67ab511f853}</Project>
-      <Name>client</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\StgMsg\StgMsg\StgMsg.csproj">
       <Project>{d84e3a15-7048-45d6-9487-0a70eac10733}</Project>
       <Name>StgMsg</Name>

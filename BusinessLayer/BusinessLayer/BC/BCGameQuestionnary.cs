@@ -10,26 +10,13 @@ namespace BusinessLayer.BC
     class BCGameQuestionnary : abstractBC
     {
         Questionnary questionnary;
-        Player player;
 
-        public StgMsg.StgMsg setQuestionnary(DAL.DAL dal, StgMsg.StgMsg msg)
+        public StgMsg.StgMsg setQuestionnary(DAL.DAL dal)
         {
             questionnary = new Questionnary("game");
-            questionnary.setListQuestions(dal);
-
-            msg.data[1] = questionnary;
-
-            return msg;
+            return null;
         }
 
-        public StgMsg.StgMsg validate(StgMsg.StgMsg msg, DAL.DAL dal)
-        {
-            player = (Player)msg.data[0];
-            //player.createPlayer(player, dal);
-            player.createPlayer(dal);
-            
-            return msg;
-        }
 
     }
 }

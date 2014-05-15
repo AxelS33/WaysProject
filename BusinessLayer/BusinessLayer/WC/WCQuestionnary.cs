@@ -16,11 +16,14 @@ namespace BusinessLayer.WC
         /*** défini un profil par défaut, et choisi la premiére question ***/
         public StgMsg.StgMsg setProfile(StgMsg.StgMsg oMsg)
         {
-           // this.dal = new DAL.DAL(); //COMMENTE POUR LES TEST 
+           
+            this.dal = new DAL.DAL(); //COMMENTE POUR LES TEST 
             BCQuestionnary oQuestionnary = new BCQuestionnary();
             Player profile = oQuestionnary.setFeature(dal);
+            oMsg.data = new object[1];
+            oMsg.data.SetValue(profile, 0);
 
-            /***choix de la premiére question a poser***/
+           /***choix de la premiére question a poser***/
             Question questionPicked  = this.getNextQuestion(oMsg);
             profile.currentQuestion = questionPicked;
             profile.askedQuestion.Add(questionPicked);
@@ -55,11 +58,13 @@ namespace BusinessLayer.WC
         /*** appelle les fonction qui choisissent la prochaine question en fonction du poid des features du profil courant***/
         private Question getNextQuestion(StgMsg.StgMsg oMsg)
         {
+           
             object[] ArrayProfile = oMsg.data;
             Player profile = (Player)ArrayProfile.GetValue(0);
             BCQuestionnary oQuestionnary = new BCQuestionnary();
             Question questionPicked = oQuestionnary.chooseQuestion(profile, this.dal);
-           
+            
+
             return questionPicked;
 
 

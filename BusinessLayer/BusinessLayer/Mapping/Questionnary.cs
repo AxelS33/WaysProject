@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -25,8 +26,9 @@ namespace BusinessLayer.Mapping
 
         public void setListQuestions(DAL.DAL dal)
         {
-            List<Object> parameters = new List<Object>();
-            parameters.Add(this.typeQuestionnary);
+
+           /* Hashtable hashtable = new Hashtable();
+            hashtable.Add();
             SqlDataReader reader = dal.executeWithParameter("getAllQuestions", parameters);
 
             while (reader.Read())
@@ -36,7 +38,7 @@ namespace BusinessLayer.Mapping
                 question.setOrder((int)reader["questionOrder"]);
 
                 listQuestion.Add(question);
-            }
+            }*/
         }
     }
 }

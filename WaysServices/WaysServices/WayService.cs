@@ -18,7 +18,7 @@ namespace WaysServices
         {
             switch (msg.pSecurity)
             {
-                case "qsdqsd":
+                case "testkey":
                     this.callServices(msg);
                     break;
                 default:
@@ -40,6 +40,7 @@ namespace WaysServices
                     this.services.launchServices(msg);
                     break;
                 case "WaysOriention":
+                 
                     this.services = new Services.WaysOriention();
                     this.services.launchServices(msg);
                     break;

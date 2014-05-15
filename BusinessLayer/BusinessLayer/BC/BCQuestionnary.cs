@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using BusinessLayer.Mapping;
 using System.Data.SqlClient;
+using System.Collections;
 
 namespace BusinessLayer.BC
 {
@@ -60,7 +61,7 @@ namespace BusinessLayer.BC
                     break;
                 }
             }
-           //**COMMENTE POUR TEST questionPicked.listAnswer = questionPicked.getAnswers(dal);
+            questionPicked.listAnswer = questionPicked.getAnswers(dal, questionPicked.id);
             return questionPicked;
             
         }
@@ -124,9 +125,11 @@ namespace BusinessLayer.BC
         }
         private List<Feature> getFeatureOfJob(DAL.DAL dal, int idJob)
         {
-            List<object> parameters = new List<object>();
-            parameters.Add(idJob);
-            SqlDataReader featureReader = dal.executeWithParameter("getFeatureOfJob",parameters);
+            object[] param = new object[2];
+            param[0] = "@IdProfession";
+            param[1] = idJob;
+
+            SqlDataReader featureReader = dal.queryWithParameter("Features_Profession", param);
             List<Feature> listFeatures = new List<Feature>();
 
             while (featureReader.Read())

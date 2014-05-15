@@ -13,3 +13,8 @@ C:\Users\Francky\Documents\WaysProject\DAL\DAL\obj\Debug\DAL.dll
 C:\Users\Francky\Documents\WaysProject\DAL\DAL\obj\Debug\DAL.pdb
 C:\Users\Francky\Documents\WaysProject\DAL\DAL\bin\Debug\DAL.dll
 C:\Users\Francky\Documents\WaysProject\DAL\DAL\bin\Debug\DAL.pdb
+H:\WaysProject\DAL\DAL\bin\Debug\DAL.dll
+H:\WaysProject\DAL\DAL\bin\Debug\DAL.pdb
+H:\WaysProject\DAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+H:\WaysProject\DAL\DAL\obj\Debug\DAL.dll
+H:\WaysProject\DAL\DAL\obj\Debug\DAL.pdb

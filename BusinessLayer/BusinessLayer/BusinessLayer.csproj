@@ -48,6 +48,7 @@
     <Compile Include="Mapping\Admin.cs" />
     <Compile Include="Mapping\Answer.cs" />
     <Compile Include="Mapping\Feature.cs" />
+    <Compile Include="Mapping\HashTable.cs" />
     <Compile Include="Mapping\Job.cs" />
     <Compile Include="Mapping\Player.cs" />
     <Compile Include="Mapping\Question.cs" />

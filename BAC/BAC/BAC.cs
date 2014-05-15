@@ -26,6 +26,7 @@ namespace BAC
                 case "launchWaysOriention":
                     this.workflowControler = new WCQuestionnary();
                     this.workflowControler.setProfile(msg);
+                   
                     break;
                 case "validateWaysOriention":
                     this.workflowControler = new WCQuestionnary();

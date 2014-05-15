@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -10,6 +11,8 @@ namespace DAL
     interface IDAL
     {
           SqlDataReader executeProcedure(String procedureName);
-          SqlDataReader executeWithParameter(String procedureName, List<Object> parameters);
+          void executeWithParameter(String procedureName, List<object[]> parameters);
+          SqlDataReader queryWithParameter(String procedureName, object[] parameters);
+
     }
 }
