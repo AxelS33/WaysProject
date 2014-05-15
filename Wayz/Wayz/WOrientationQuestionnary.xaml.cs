@@ -23,5 +23,12 @@ namespace Wayz
         {
             InitializeComponent();
         }
+
+        private void BtnFinalResult_Click(object sender, RoutedEventArgs e)
+        {
+            WOrientationFinalResult oFFinalResult = new WOrientationFinalResult();
+            oFFinalResult.Show();
+            this.Close();
+        }
     }
 }

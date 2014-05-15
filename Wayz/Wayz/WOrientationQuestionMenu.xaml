@@ -1,0 +1,22 @@
+﻿<Window x:Class="Wayz.WOrientationQuestionMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WOrientationQuestionMenu" Height="500" Width="700" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Image Margin="10,10,439,0" Source="exia-logo-20111.png" Stretch="Fill" Width="243" Height="94" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label Content="AdminUsername" HorizontalAlignment="Left" Margin="572,10,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Button x:Name="BtnLogout" Content="Logout" HorizontalAlignment="Left" Margin="607,44,0,0" VerticalAlignment="Top" Width="75" Click="BtnLogout_Click"/>
+        <Button x:Name="BtnAdd" Content="Add a question" HorizontalAlignment="Left" Margin="10,193,0,0" VerticalAlignment="Top" Width="100" Click="BtnAdd_Click"/>
+        <Label Content="Question Table" HorizontalAlignment="Left" Margin="250,137,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <ListView HorizontalAlignment="Left" Height="240" Margin="10,220,0,0" VerticalAlignment="Top" Width="400">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Question" Width="400"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="BtnUpdate" Content="Update" HorizontalAlignment="Left" Margin="453,239,0,0" VerticalAlignment="Top" Width="75" Click="BtnUpdate_Click"/>
+        <Button x:Name="BtnDelete" Content="Delete" HorizontalAlignment="Left" Margin="453,299,0,0" VerticalAlignment="Top" Width="75" Click="BtnDelete_Click"/>
+        <Button x:Name="BtnMainMenu" Content="Main Menu" HorizontalAlignment="Left" Margin="597,428,0,0" VerticalAlignment="Top" Width="75" Click="BtnMainMenu_Click"/>
+    </Grid>
+</Window>

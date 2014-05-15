@@ -68,11 +68,20 @@
     <Compile Include="WGameKnowledge.xaml.cs">
       <DependentUpon>WGameKnowledge.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WGameOrganization.xaml.cs">
+      <DependentUpon>WGameOrganization.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WGameQuestionMenu.xaml.cs">
       <DependentUpon>WGameQuestionMenu.xaml</DependentUpon>
     </Compile>
     <Compile Include="WGameQuestionnary.xaml.cs">
       <DependentUpon>WGameQuestionnary.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WGameUpdateQuestion.xaml.cs">
+      <DependentUpon>WGameUpdateQuestion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WGradingScale.xaml.cs">
+      <DependentUpon>WGradingScale.xaml</DependentUpon>
     </Compile>
     <Compile Include="WMainMenuAdmin.xaml.cs">
       <DependentUpon>WMainMenuAdmin.xaml</DependentUpon>
@@ -80,14 +89,32 @@
     <Compile Include="WMainMenuUser.xaml.cs">
       <DependentUpon>WMainMenuUser.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WOrganizeQuestionnary.xaml.cs">
+      <DependentUpon>WOrganizeQuestionnary.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WOrientationAddQuestion.xaml.cs">
+      <DependentUpon>WOrientationAddQuestion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WOrientationAdmin.xaml.cs">
+      <DependentUpon>WOrientationAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WOrientationEmailAccount.xaml.cs">
+      <DependentUpon>WOrientationEmailAccount.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WOrientationFinalResult.xaml.cs">
       <DependentUpon>WOrientationFinalResult.xaml</DependentUpon>
     </Compile>
     <Compile Include="WOrientationJob.xaml.cs">
       <DependentUpon>WOrientationJob.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WOrientationQuestionMenu.xaml.cs">
+      <DependentUpon>WOrientationQuestionMenu.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WOrientationQuestionnary.xaml.cs">
       <DependentUpon>WOrientationQuestionnary.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WOrientationUpdateQuestion.xaml.cs">
+      <DependentUpon>WOrientationUpdateQuestion.xaml</DependentUpon>
     </Compile>
     <Page Include="WGameAddQuestion.xaml">
       <SubType>Designer</SubType>
@@ -106,6 +133,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WGameKnowledge.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WGameOrganization.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -129,11 +160,35 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="WGameUpdateQuestion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WGradingScale.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WMainMenuAdmin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WMainMenuUser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WOrganizeQuestionnary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WOrientationAddQuestion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WOrientationAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WOrientationEmailAccount.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -145,7 +200,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="WOrientationQuestionMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WOrientationQuestionnary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WOrientationUpdateQuestion.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
