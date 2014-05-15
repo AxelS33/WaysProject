@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BusinessLayer.Mapping;
+using System.Data.SqlClient;
 
 namespace BusinessLayer.BC
 {
@@ -19,8 +20,21 @@ namespace BusinessLayer.BC
 
         
 
-        public void weightProfileFeature()
+        public StgMsg.StgMsg weightProfileFeature(StgMsg.StgMsg msg)
         {
+            Player currentProfile = (Player) msg.data[0];
+            Feature featureToWeight = currentProfile.currentQuestion.feature;
+            int weightToAdd = featureToWeight.getWeight();
+
+            foreach(Feature curentFeature in currentProfile.listFeature)
+            {
+                if (curentFeature == featureToWeight)
+                {
+                    curentFeature.setWeight(weightToAdd);
+                }
+            }
+            msg.data.SetValue(currentProfile, 0);
+            return msg;
 
         }
 
@@ -64,6 +78,71 @@ namespace BusinessLayer.BC
             return found;
         }
 
-      
+
+
+        internal void compareProfile(StgMsg.StgMsg oMsg)
+        {
+            List<Job> listJob = this.getJobs();
+
+            foreach (Job aJob in listJob)
+            {
+                foreach (Feature aFeature in aJob.listFeature)
+                {
+                   // this.compareFeature(aJob.listFeature, aFeature);
+                }
+            }
+        }
+
+       /* private int compareFeature(List<Feature> list, Feature featureToCompare )
+        {
+            int ecart = 0;
+            foreach (Feature aFeature in list)
+            {
+                if (aFeature == featureToCompare)
+                {
+                    ecart = 
+                }
+            }
+        }*/
+
+        public List<Job> getJobs()
+        {
+            DAL.DAL dal = new DAL.DAL();
+            SqlDataReader allJobReader = dal.executeProcedure("getAllJob");
+            List<Job> listAllJob = new List<Job>();
+
+            while (allJobReader.Read())
+            {
+                Job job = new Job();
+                job.id = (int)allJobReader["idJob"];
+                List<Feature> featuresOfTheJob = this.getFeatureOfJob(dal, job.id);
+                job.listFeature = featuresOfTheJob;
+                job.name = (string)allJobReader["nameJob"];
+                job.description = (string)allJobReader["descriptionJob"];
+                listAllJob.Add(job);
+            }
+
+            allJobReader.Close();
+            return listAllJob;
+        }
+        private List<Feature> getFeatureOfJob(DAL.DAL dal, int idJob)
+        {
+            List<object> parameters = new List<object>();
+            parameters.Add(idJob);
+            SqlDataReader featureReader = dal.executeWithParameter("getFeatureOfJob",parameters);
+            List<Feature> listFeatures = new List<Feature>();
+
+            while (featureReader.Read())
+            {
+                Feature feature = new Feature();
+                feature.setId((int) featureReader["idFeature"]);
+                feature.setName((string)featureReader["nameFeature"]);
+                feature.setWeight((int)featureReader["weightFeature"]);
+
+                listFeatures.Add(feature);
+            }
+            featureReader.Close();
+            return listFeatures;
+        }
     }
 }

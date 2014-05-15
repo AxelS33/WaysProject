@@ -29,7 +29,7 @@ namespace DAL
         public SqlDataReader executeProcedure(String procedureName)
         {
             connection.Open();
-            this.cmd = new SqlCommand();
+            this.cmd = new SqlCommand();    
             this.cmd.Connection = this.connection;
 
             this.cmd.CommandText = procedureName;

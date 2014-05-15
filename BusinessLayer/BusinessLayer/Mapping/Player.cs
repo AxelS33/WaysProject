@@ -10,7 +10,7 @@ namespace BusinessLayer.Mapping
     class Player : User
     {
         private int score { get; set; }
-        private List<Feature> listFeature;
+        public List<Feature> listFeature{get; set;}
         public List<Question> askedQuestion{get; set;}
         public Question currentQuestion { get; set; }
         public Question nextQuestion {get; set;}

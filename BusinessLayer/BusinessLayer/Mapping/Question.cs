@@ -12,7 +12,8 @@ namespace BusinessLayer.Mapping
         private int id { get; set; }
         private string description { get; set; }
         public List<Answer> listAnswer { get; set; }
-        private Feature feature { get; set; }
+        public Feature feature { get; set; }
+        public Answer pickedAnswer { get; set; }
         private int order { get; set; }
 
         public Question()
@@ -68,6 +69,28 @@ namespace BusinessLayer.Mapping
         internal void setOrder(int order)
         {
             this.order = order;
+        }
+
+        public void addOrientionQuestion(DAL.DAL dal)
+        {
+            List<Object> parameters = new List<object>();
+            parameters.Add(this.description);
+            parameters.Add(this.feature.getName());
+            dal.executeWithParameter("addQuestion", parameters);
+        }
+
+        public void modifyQuestion(DAL.DAL dal)
+        {
+
+        }
+
+        public void deleteQuestion(DAL.DAL dal)
+        {
+
+        }
+        public void modifyQuestionSettings(DAL.DAL dal)
+        {
+
         }
 
 

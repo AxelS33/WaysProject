@@ -34,6 +34,11 @@ namespace BusinessLayer.Mapping
             this.id = id;
         }
 
+        internal String getName()
+        {
+            return this.name;
+        }
+
         internal void setName(string name)
         {
             this.name = name;
