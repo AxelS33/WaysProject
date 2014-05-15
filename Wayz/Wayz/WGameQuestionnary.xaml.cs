@@ -26,6 +26,7 @@ namespace Wayz
         private Question curQuestion;
         private Player player;
         private int scoretmp;
+        private StgMsg.StgMsg msg;
 
         private Dictionary<RadioButton, int> answerMap;
 
@@ -39,47 +40,29 @@ namespace Wayz
 
         public WGameQuestionnary(StgMsg.StgMsg msg)
         {
-            //this.questionnary = (Questionnary)msg.data[1];
-            //this.player = (Player)msg.data[0];
-
-            // ------------------------------------ test debut ------------------------------------
-            Mapping.Questionnary questionnary = new Questionnary();
-            Mapping.Question q = new Question();
-            Mapping.Question q2 = new Question();
-            Mapping.Answer ans1 = new Answer();
-            Mapping.Answer ans2 = new Answer();
-            Mapping.Answer ans3 = new Answer();
-            ans1.setDescription("blablahiush");
-            ans1.setScore(1);
-            ans2.setDescription("gdqskgdkhgf");
-            ans2.setScore(10);
-            ans3.setDescription("azret");
-            ans3.setScore(5);
-            q2.setDescription("Quelgglglgg ?");
-            q.setDescription("Quel ze ?");
-            q.listAnswer.Add(ans1);
-            q.listAnswer.Add(ans2);
-            q.listAnswer.Add(ans3);
-            q.setOrder(1);
-            List<Question> list = new List<Question>();
-            list.Add(q);
-            questionnary.setListQuestion(list);
-            this.player = new Player();
-            this.player.setPseudo("test");
-            this.player.setScore(0);
-            this.questionnary = questionnary;
-            // ------------------------------------ test fin ------------------------------------
-
+            this.msg = msg;
+            this.questionnary = (Questionnary)msg.data[1];
+            this.player = (Player)msg.data[0];
 
             this.scoretmp = 0;
+            //this.BtnFinalResult.Visibility = Visibility.Hidden;
             //this.QuestionGame = new TextBlock();
             InitializeComponent();
             
             //Question question;
 
-            this.setQuestion(1);
+            this.setQuestion((int)msg.data[2]);
             this.setAnswer(this.curQuestion);
-            
+
+            if (curQuestion.getOrder() == 1)
+            {
+                this.BtnPrevious.Visibility = Visibility.Hidden;
+            }
+            else if (!this.nextQuestion(curQuestion.getOrder()))
+            {
+                this.BtnNext.Visibility = Visibility.Hidden;
+                //this.BtnFinalResult.Visibility = Visibility.Visible;
+            }
         }
 
         private void BtnFinalResult_Click(object sender, RoutedEventArgs e)
@@ -106,30 +89,34 @@ namespace Wayz
             int topMargin = 246;
             this.answerMap = new Dictionary<RadioButton, int>();
 
-            foreach (Answer ans in question.getListAnswer())
+            if (question.getListAnswer() != null)
             {
-                RadioButton button = new RadioButton();
-                button.Content = ans.getDescription();
-                button.ToolTip = ans.getWeight();
+                foreach (Answer ans in question.getListAnswer())
+                {
+                    RadioButton button = new RadioButton();
+                    button.Content = ans.getDescription();
+                    button.ToolTip = ans.getWeight();
 
-                answerMap.Add(button, ans.getWeight());
-                string testscore = ans.getWeight().ToString();
-                
-                button.HorizontalAlignment=HorizontalAlignment.Center;
-                button.VerticalAlignment=VerticalAlignment.Top;
+                    answerMap.Add(button, ans.getWeight());
+                    string testscore = ans.getWeight().ToString();
 
-                Thickness margin = button.Margin;
-                margin.Left = 0;
-                margin.Top = topMargin;
-                margin.Right = 0;
-                margin.Bottom = 0;
-                button.Margin = margin;
+                    button.HorizontalAlignment = HorizontalAlignment.Center;
+                    button.VerticalAlignment = VerticalAlignment.Top;
 
-                button.Click += new RoutedEventHandler(this.buttonClick);
+                    Thickness margin = button.Margin;
+                    margin.Left = 0;
+                    margin.Top = topMargin;
+                    margin.Right = 0;
+                    margin.Bottom = 0;
+                    button.Margin = margin;
 
-                this.gridQuestionnary.Children.Add(button);
-                topMargin += 30;
+                    button.Click += new RoutedEventHandler(this.buttonClick);
+
+                    this.gridQuestionnary.Children.Add(button);
+                    topMargin += 30;
+                }
             }
+            
         }
 
         private void buttonClick(Object sender, EventArgs e)
@@ -142,18 +129,32 @@ namespace Wayz
         private void BtnNext_Click(object sender, RoutedEventArgs e)
         {
             this.addScorePlayer(this.scoretmp);
-            this.scoretmp = 0;
+            //this.scoretmp = 0;
             
             //waysGame.addScorePlayer();
-            this.gridQuestionnary.Children.Clear();
-            InitializeComponent();
-            this.setQuestion(this.curQuestion.getOrder() + 1);
-            this.setAnswer(this.curQuestion);
+            //this.gridQuestionnary.Children.Clear();
+            //InitializeComponent();
+            //this.setQuestion();
+            //this.setAnswer(this.curQuestion);
+            this.msg.data[2] = this.curQuestion.getOrder() + 1;
+
+            Wayz.WGameQuestionnary next = new WGameQuestionnary(this.msg);
+            next.Show();
         }
 
         private void addScorePlayer(int score)
         {
             this.player.setScore(this.player.getScore() + score);
+        }
+
+        public bool nextQuestion(int curOrder)
+        {
+            foreach(Question q in this.questionnary.getListQuestion()){
+                if (q.getOrder() == curOrder + 1){
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }
