@@ -8,10 +8,10 @@ namespace BusinessLayer.Mapping
 {
     class Job
     {
-        private int id { get; set; }
-        private string name { get; set; }
-        private string description{get; set;}
-        private List<Feature> listFeature { get; set; }
+        public int id { get; set; }
+        public string name { get; set; }
+        public string description { get; set; }
+        public List<Feature> listFeature { get; set; }
 
         public void addFeature(string featureName, int weight)
         {
