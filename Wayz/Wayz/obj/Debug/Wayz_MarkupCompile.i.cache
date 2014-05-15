@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\utilisateur1\Documents\WaysProject\Wayz\Wayz\obj\Debug\
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\
 Wayz
 none
 false
 DEBUG;TRACE
-C:\Users\utilisateur1\Documents\WaysProject\Wayz\Wayz\App.xaml
-13-752256851
+G:\PROJET WAYS BDD\Wayz\Wayz\App.xaml
+22-1612416180
 
-21-1686919582
+301807239608
 12-1401562060
-WGameAddQuestion.xaml;WGameAdmin.xaml;WGameFinalResult.xaml;WGameHelpUs.xaml;WGameKnowledge.xaml;WGameQuestionMenu.xaml;WGameQuestionnary.xaml;MainWindow.xaml;WMainMenuAdmin.xaml;WMainMenuUser.xaml;WOrientationFinalResult.xaml;WOrientationJob.xaml;WOrientationQuestionnary.xaml;
+WGameAddQuestion.xaml;WGameAdmin.xaml;WGameFinalResult.xaml;WGameHelpUs.xaml;WGameKnowledge.xaml;WGameOrganization.xaml;WGameQuestionMenu.xaml;WGameQuestionnary.xaml;MainWindow.xaml;WGameUpdateQuestion.xaml;WGradingScale.xaml;WMainMenuAdmin.xaml;WMainMenuUser.xaml;WOrganizeQuestionnary.xaml;WOrientationAddQuestion.xaml;WOrientationAdmin.xaml;WOrientationEmailAccount.xaml;WOrientationFinalResult.xaml;WOrientationJob.xaml;WOrientationQuestionMenu.xaml;WOrientationQuestionnary.xaml;WOrientationUpdateQuestion.xaml;
 
 False
 

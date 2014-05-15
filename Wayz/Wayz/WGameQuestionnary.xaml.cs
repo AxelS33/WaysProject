@@ -23,5 +23,12 @@ namespace Wayz
         {
             InitializeComponent();
         }
+
+        private void BtnFinalResult_Click(object sender, RoutedEventArgs e)
+        {
+            WGameFinalResult oFFinalResult = new WGameFinalResult();
+            oFFinalResult.Show();
+            this.Close();
+        }
     }
 }

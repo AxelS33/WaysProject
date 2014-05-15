@@ -23,5 +23,12 @@ namespace Wayz
         {
             InitializeComponent();
         }
+
+        private void BtnMainMenu_Click(object sender, RoutedEventArgs e)
+        {
+            WMainMenuUser oFMainMenu = new WMainMenuUser();
+            oFMainMenu.Show();
+            this.Close();
+        }
     }
 }

@@ -24,17 +24,17 @@ namespace Wayz
             InitializeComponent();
         }
 
-        private void BtnGame(object sender, RoutedEventArgs e)
+        private void BtnGame_Click(object sender, RoutedEventArgs e)
         {
-            WGameQuestionMenu oFQuestionMenu = new WGameQuestionMenu();
-            oFQuestionMenu.Show();
+            WGameAdmin oFGameAdmin = new WGameAdmin();
+            oFGameAdmin.Show();
             this.Close();
         }
 
-        private void BtnOrientation(object sender, RoutedEventArgs e)
+        private void BtnOrientation_Click(object sender, RoutedEventArgs e)
         {
-            WGameQuestionMenu oFQuestionMenu = new WGameQuestionMenu();
-            oFQuestionMenu.Show();
+            WOrientationAdmin oFOrientationAdmin = new WOrientationAdmin();
+            oFOrientationAdmin.Show();
             this.Close();
         }
     }

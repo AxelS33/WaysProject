@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Adrien\Desktop\Exia\2ème année\DOT NET\Projet\Visual studio\Wayz\Wayz\obj\Debug\
+G:\PROJET WAYS BDD\Wayz\Wayz\obj\Debug\
 Wayz
 none
 false
 DEBUG;TRACE
-C:\Users\Adrien\Desktop\Exia\2ème année\DOT NET\Projet\Visual studio\Wayz\Wayz\App.xaml
-13-752256851
+G:\PROJET WAYS BDD\Wayz\Wayz\App.xaml
+22-1612416180
 
-17-1572930137
+261017549377
 12-1401562060
-WGameAddQuestion.xaml;WGameAdmin.xaml;WGameFinalResult.xaml;WGameHelpUs.xaml;WGameKnowledge.xaml;WGameQuestionMenu.xaml;WGameQuestionnary.xaml;MainWindow.xaml;WMainMenuAdmin.xaml;WMainMenuUser.xaml;WOrientationFinalResult.xaml;WOrientationJob.xaml;WOrientationQuestionnary.xaml;
+WGameAddQuestion.xaml;WGameAdmin.xaml;WGameFinalResult.xaml;WGameHelpUs.xaml;WGameKnowledge.xaml;WGameOrganization.xaml;WGameQuestionMenu.xaml;WGameQuestionnary.xaml;MainWindow.xaml;WGameUpdateQuestion.xaml;WGradingScale.xaml;WMainMenuAdmin.xaml;WMainMenuUser.xaml;WOrganizeQuestionnary.xaml;WOrientationAddQuestion.xaml;WOrientationAdmin.xaml;WOrientationEmailAccount.xaml;WOrientationFinalResult.xaml;WOrientationJob.xaml;WOrientationQuestionMenu.xaml;WOrientationQuestionnary.xaml;WOrientationUpdateQuestion.xaml;
 
 False
 

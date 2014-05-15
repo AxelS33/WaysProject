@@ -25,11 +25,19 @@ namespace Wayz
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void BtnLoginGuest_Click(object sender, RoutedEventArgs e)
         {
             WMainMenuUser oFMenuUser = new WMainMenuUser();
             oFMenuUser.Show();
             this.Close();
         }
+
+        private void BtnLoginAdmin_Click(object sender, RoutedEventArgs e)
+        {
+            WMainMenuAdmin oFMenuAdmin = new WMainMenuAdmin();
+            oFMenuAdmin.Show();
+            this.Close();
+        }
+
     }
 }

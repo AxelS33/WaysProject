@@ -24,5 +24,25 @@ namespace Wayz
             InitializeComponent();
         }
 
+
+        private void BtnLogout_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void BtnAddQuestion_Click(object sender, RoutedEventArgs e)
+        {
+            WGameQuestionMenu oFQuestionMenu = new WGameQuestionMenu();
+            oFQuestionMenu.Show();
+            this.Close();
+        }
+
+        private void BtnCancelAddQuestion_Click(object sender, RoutedEventArgs e)
+        {
+            WGameQuestionMenu oFQuestionMenu = new WGameQuestionMenu();
+            oFQuestionMenu.Show();
+            this.Close();
+        }
+
     }
 }
