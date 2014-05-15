@@ -37,5 +37,10 @@ namespace Mapping
         {
             this.score = score;
         }
+
+        public int getScore()
+        {
+            return this.score;
+        }
     }
 }

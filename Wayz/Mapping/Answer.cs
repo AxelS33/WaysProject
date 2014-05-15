@@ -25,5 +25,10 @@ namespace Mapping
        {
            this.weight = score;
        }
+
+       public int getWeight()
+       {
+           return this.weight;
+       }
     }
 }

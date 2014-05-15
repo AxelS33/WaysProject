@@ -43,24 +43,8 @@ namespace Wayz
             msg.data = new Object[] {this.txtBoxUsername.Text};
          
             //msg = waysgame.launch(msg);
-            // ------------------------------------ test debut ------------------------------------
-            Mapping.Questionnary questionnary = new Questionnary();
-            Mapping.Question q = new Question();
-            Mapping.Answer ans1 = new Answer();
-            Mapping.Answer ans2 = new Answer();
-            ans1.setDescription("blablahiush");
-            ans1.setScore(0);
-            ans2.setDescription("gdqskgdkhgf");
-            ans2.setScore(10);
-            q.setDescription("Quel ze ?");
-            q.listAnswer.Add(ans1);
-            q.listAnswer.Add(ans2);
-            q.setOrder(1);
-            List<Question> list = new List<Question>();
-            list.Add(q);
-            questionnary.setListQuestion(list);
-            // ------------------------------------ test fin ------------------------------------
-            WGameQuestionnary oFGameQuestionnary = new WGameQuestionnary(questionnary);//msg.data[1]);
+            
+            WGameQuestionnary oFGameQuestionnary = new WGameQuestionnary(msg);//msg.data[1]);
             oFGameQuestionnary.Show();
 
             this.Close();

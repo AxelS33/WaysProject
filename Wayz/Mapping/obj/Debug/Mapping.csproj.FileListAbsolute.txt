@@ -2,3 +2,8 @@ C:\Users\Adrien\Documents\WaysProject\Wayz\Mapping\bin\Debug\Mapping.dll
 C:\Users\Adrien\Documents\WaysProject\Wayz\Mapping\bin\Debug\Mapping.pdb
 C:\Users\Adrien\Documents\WaysProject\Wayz\Mapping\obj\Debug\Mapping.dll
 C:\Users\Adrien\Documents\WaysProject\Wayz\Mapping\obj\Debug\Mapping.pdb
+C:\Users\utilisateur1\Documents\WaysProject\Wayz\Mapping\bin\Debug\Mapping.dll
+C:\Users\utilisateur1\Documents\WaysProject\Wayz\Mapping\bin\Debug\Mapping.pdb
+C:\Users\utilisateur1\Documents\WaysProject\Wayz\Mapping\obj\Debug\Mapping.csprojResolveAssemblyReference.cache
+C:\Users\utilisateur1\Documents\WaysProject\Wayz\Mapping\obj\Debug\Mapping.dll
+C:\Users\utilisateur1\Documents\WaysProject\Wayz\Mapping\obj\Debug\Mapping.pdb

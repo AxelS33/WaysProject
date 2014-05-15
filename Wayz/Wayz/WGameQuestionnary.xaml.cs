@@ -20,20 +20,58 @@ namespace Wayz
     /// </summary>
     public partial class WGameQuestionnary : Window
     {
+        private client.CUT.WaysGame waysGame;
         private RadioButton button;
         private Questionnary questionnary;
         private Question curQuestion;
-        private GroupBox radioBox;
+        private Player player;
+        private int scoretmp;
+
+        private Dictionary<RadioButton, int> answerMap;
+
+        
+
         //private TextBlock QuestionGame;
         public WGameQuestionnary()
         {
             InitializeComponent();
         }
 
-        public WGameQuestionnary(Object questionnary)
+        public WGameQuestionnary(StgMsg.StgMsg msg)
         {
-            this.questionnary = (Questionnary)questionnary;
-            this.radioBox = new GroupBox();
+            //this.questionnary = (Questionnary)msg.data[1];
+            //this.player = (Player)msg.data[0];
+
+            // ------------------------------------ test debut ------------------------------------
+            Mapping.Questionnary questionnary = new Questionnary();
+            Mapping.Question q = new Question();
+            Mapping.Question q2 = new Question();
+            Mapping.Answer ans1 = new Answer();
+            Mapping.Answer ans2 = new Answer();
+            Mapping.Answer ans3 = new Answer();
+            ans1.setDescription("blablahiush");
+            ans1.setScore(1);
+            ans2.setDescription("gdqskgdkhgf");
+            ans2.setScore(10);
+            ans3.setDescription("azret");
+            ans3.setScore(5);
+            q2.setDescription("Quelgglglgg ?");
+            q.setDescription("Quel ze ?");
+            q.listAnswer.Add(ans1);
+            q.listAnswer.Add(ans2);
+            q.listAnswer.Add(ans3);
+            q.setOrder(1);
+            List<Question> list = new List<Question>();
+            list.Add(q);
+            questionnary.setListQuestion(list);
+            this.player = new Player();
+            this.player.setPseudo("test");
+            this.player.setScore(0);
+            this.questionnary = questionnary;
+            // ------------------------------------ test fin ------------------------------------
+
+
+            this.scoretmp = 0;
             //this.QuestionGame = new TextBlock();
             InitializeComponent();
             
@@ -65,16 +103,17 @@ namespace Wayz
 
         private void setAnswer(Question question)
         {
-           // Content="RadioButton" HorizontalAlignment="Center" Margin="0,246,0,0" VerticalAlignment="Top"
             int topMargin = 246;
-            
-            
-            
-                
+            this.answerMap = new Dictionary<RadioButton, int>();
+
             foreach (Answer ans in question.getListAnswer())
             {
                 RadioButton button = new RadioButton();
                 button.Content = ans.getDescription();
+                button.ToolTip = ans.getWeight();
+
+                answerMap.Add(button, ans.getWeight());
+                string testscore = ans.getWeight().ToString();
                 
                 button.HorizontalAlignment=HorizontalAlignment.Center;
                 button.VerticalAlignment=VerticalAlignment.Top;
@@ -86,19 +125,35 @@ namespace Wayz
                 margin.Bottom = 0;
                 button.Margin = margin;
 
-                Size size = button.RenderSize;
-                size.Height = 30;
-                size.Width = 70;
-                button.RenderSize = size;
+                button.Click += new RoutedEventHandler(this.buttonClick);
 
-                //this.radioBox.
-
-                button.Visibility = Visibility.Visible;
-                
-                //button.IsEnabled = true;
-                //button.IsVisible = true;
+                this.gridQuestionnary.Children.Add(button);
                 topMargin += 30;
             }
+        }
+
+        private void buttonClick(Object sender, EventArgs e)
+        {
+            RadioButton test = (RadioButton)sender;
+            this.scoretmp = this.answerMap[test];
+            //MessageBox.Show(weight.ToString());
+        }
+
+        private void BtnNext_Click(object sender, RoutedEventArgs e)
+        {
+            this.addScorePlayer(this.scoretmp);
+            this.scoretmp = 0;
+            
+            //waysGame.addScorePlayer();
+            this.gridQuestionnary.Children.Clear();
+            InitializeComponent();
+            this.setQuestion(this.curQuestion.getOrder() + 1);
+            this.setAnswer(this.curQuestion);
+        }
+
+        private void addScorePlayer(int score)
+        {
+            this.player.setScore(this.player.getScore() + score);
         }
     }
 }

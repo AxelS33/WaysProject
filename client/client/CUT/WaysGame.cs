@@ -21,15 +21,17 @@ namespace client.CUT
             msg.invoke = "launch";
 
             cuc = new CUC.CUC();
-            player = new Player();
-            player.setPseudo((string) msg.data[0]);
-            player.setScore(0);
+            this.player = new Player();
+            this.player.setPseudo((string) msg.data[0]);
+            this.player.setScore(0);
 
-            msg.data[0] = player;
+            msg.data[0] = this.player;
            
             //msg = cuc.callService(msg);
 
             return msg;
         }
+
+        
     }
 }
