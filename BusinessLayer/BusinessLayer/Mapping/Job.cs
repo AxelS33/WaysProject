@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Mapping
 {
-    class Job
+    public class Job
     {
         public int id { get; set; }
         public string name { get; set; }
         public string description { get; set; }
         public List<Feature> listFeature { get; set; }
+        public int ecart { get; set; }
 
         public void addFeature(string featureName, int weight)
         {

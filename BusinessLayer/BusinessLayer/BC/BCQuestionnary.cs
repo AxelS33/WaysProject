@@ -24,13 +24,13 @@ namespace BusinessLayer.BC
         {
             Player currentProfile = (Player) msg.data[0];
             Feature featureToWeight = currentProfile.currentQuestion.feature;
-            int weightToAdd = featureToWeight.getWeight();
+            int weightToAdd = featureToWeight.weight;
 
             foreach(Feature curentFeature in currentProfile.listFeature)
             {
                 if (curentFeature == featureToWeight)
                 {
-                    curentFeature.setWeight(weightToAdd);
+                    curentFeature.weight = weightToAdd;
                 }
             }
             msg.data.SetValue(currentProfile, 0);
@@ -60,7 +60,7 @@ namespace BusinessLayer.BC
                     break;
                 }
             }
-            questionPicked.listAnswer = questionPicked.getAnswers(dal);
+           // questionPicked.listAnswer = questionPicked.getAnswers(dal);
             return questionPicked;
             
         }
@@ -80,30 +80,27 @@ namespace BusinessLayer.BC
 
 
 
-        internal void compareProfile(StgMsg.StgMsg oMsg)
+        internal List<BCComparison> compareProfile(StgMsg.StgMsg oMsg)
         {
             List<Job> listJob = this.getJobs();
+            Player profil = (Player) oMsg.data[0];
+            List<Feature> listFeatureProfile = profil.listFeature;
+            List<BCComparison> listComparaison = new List<BCComparison>();
 
-            foreach (Job aJob in listJob)
+            foreach (Job eachJob in listJob)
             {
-                foreach (Feature aFeature in aJob.listFeature)
+                BCComparison compare = new BCComparison(eachJob);
+
+                foreach(Feature featureToCompare in listFeatureProfile)
                 {
-                   // this.compareFeature(aJob.listFeature, aFeature);
+                    compare.compareFeature(featureToCompare); 
                 }
+                listComparaison.Add(compare);
             }
+            return listComparaison;
         }
 
-       /* private int compareFeature(List<Feature> list, Feature featureToCompare )
-        {
-            int ecart = 0;
-            foreach (Feature aFeature in list)
-            {
-                if (aFeature == featureToCompare)
-                {
-                    ecart = 
-                }
-            }
-        }*/
+      
 
         public List<Job> getJobs()
         {
@@ -135,14 +132,23 @@ namespace BusinessLayer.BC
             while (featureReader.Read())
             {
                 Feature feature = new Feature();
-                feature.setId((int) featureReader["idFeature"]);
-                feature.setName((string)featureReader["nameFeature"]);
-                feature.setWeight((int)featureReader["weightFeature"]);
+                feature.id = (int) featureReader["idFeature"];
+                feature.name = (string)featureReader["nameFeature"];
+                feature.weight = (int)featureReader["weightFeature"];
 
                 listFeatures.Add(feature);
             }
             featureReader.Close();
             return listFeatures;
+        }
+
+        internal List<BCComparison> sortJob(List<BCComparison> listComparaison)
+        {
+            IEnumerable<BCComparison> sortJob = from compare in listComparaison
+                                          orderby compare.globalEcart
+                                          select compare;
+            return listComparaison;
+
         }
     }
 }

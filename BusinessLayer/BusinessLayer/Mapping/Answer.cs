@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Mapping
 {
-    class Answer
+   public class Answer
     {
         public int id { get; set; }
         public int weight { get; set; }

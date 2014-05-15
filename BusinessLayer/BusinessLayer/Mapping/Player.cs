@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Mapping
 {
-    class Player : User
+    public class Player : User
     {
         private int score { get; set; }
         public List<Feature> listFeature{get; set;}
@@ -22,17 +22,9 @@ namespace BusinessLayer.Mapping
             this.score = 0;
         }
 
-        public Player(string name)
-        {
-            listFeature = new List<Feature>();
-            askedQuestion = new List<Question>();
-            this.score = 0;
-            this.pseudo = name;
-        }
-
         public void setFeature(DAL.DAL dal)
         {
-            SqlDataReader reader = dal.executeProcedure("getFeature");
+      /*      SqlDataReader reader = dal.executeProcedure("getFeature");
 
             while (reader.Read())
             {
@@ -44,7 +36,19 @@ namespace BusinessLayer.Mapping
                 this.listFeature.Add(feature);
             }
 
-            reader.Close();
+            reader.Close();*/
+            //*** TEST BOUCHON**//
+            int cpt = 0;
+            while (cpt < 10)
+            {
+                Feature feature = new Feature();
+                feature.setId(1);
+                feature.setName("name");
+                feature.setWeight(0);
+                this.listFeature.Add(feature);
+            }
+
+            
         }
 
         internal List<Feature> getListFeature()
@@ -56,25 +60,6 @@ namespace BusinessLayer.Mapping
         internal List<Question> getAskedQuestion()
         {
          return   this.askedQuestion;
-        }
-
-        public string getPseudo()
-        {
-            return this.pseudo;
-        }
-
-        public int getScore()
-        {
-            return this.score;
-        }
-
-        public void createPlayer(Player player, DAL.DAL dal)
-        {
-            List<Object> parameters = new List<Object>();
-            parameters.Add(player.getPseudo());
-            parameters.Add(player.getScore());
-
-            dal.executeWithParameter("createPlayer", parameters);
         }
     }
 }

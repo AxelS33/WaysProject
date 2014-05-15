@@ -9,14 +9,14 @@ using BusinessLayer.Mapping;
 
 namespace BusinessLayer.WC
 {
-    class WCQuestionnary : abstractWC
+  public class WCQuestionnary : abstractWC
     {
         private DAL.DAL dal;
 
         /*** défini un profil par défaut, et choisi la premiére question ***/
         public StgMsg.StgMsg setProfile(StgMsg.StgMsg oMsg)
         {
-            this.dal = new DAL.DAL();
+           // this.dal = new DAL.DAL(); //COMMENTE POUR LES TEST 
             BCQuestionnary oQuestionnary = new BCQuestionnary();
             Player profile = oQuestionnary.setFeature(dal);
 
@@ -53,7 +53,7 @@ namespace BusinessLayer.WC
         }
 
         /*** appelle les fonction qui choisissent la prochaine question en fonction du poid des features du profil courant***/
-        public Question getNextQuestion(StgMsg.StgMsg oMsg)
+        private Question getNextQuestion(StgMsg.StgMsg oMsg)
         {
             object[] ArrayProfile = oMsg.data;
             Player profile = (Player)ArrayProfile.GetValue(0);
@@ -65,10 +65,22 @@ namespace BusinessLayer.WC
 
         }
 
-        public List<Feature> compareFeature(StgMsg.StgMsg oMsg)
+        public StgMsg.StgMsg compareFeature(StgMsg.StgMsg oMsg)
         {
             BCQuestionnary questionnary = new BCQuestionnary();
-            questionnary.compareProfile(oMsg);
+            List<BCComparison> listComparaison = questionnary.compareProfile(oMsg);
+            listComparaison = questionnary.sortJob(listComparaison);
+
+            object[] listJob = new object[listComparaison.Count];
+            int cpt= 0;
+                foreach(BCComparison compare in listComparaison)
+                {
+                    listJob.SetValue(compare.job, cpt);
+                    cpt++;
+                }
+                oMsg.data = listJob;
+
+                return oMsg;
         }
     }
 }

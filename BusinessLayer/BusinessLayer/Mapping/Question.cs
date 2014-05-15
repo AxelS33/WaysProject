@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Mapping
 {
-    class Question
+   public class Question
     {
         private int id { get; set; }
         private string description { get; set; }
@@ -37,7 +37,28 @@ namespace BusinessLayer.Mapping
 
         internal List<Question> getAllQuestion(DAL.DAL dal)
         {
-            throw new NotImplementedException();
+            //***REAL CODE***//
+            List<Question> listQuestion= new List<Question>();
+            SqlDataReader readerQuestion = dal.executeProcedure("getAllQuestion");
+
+            while (readerQuestion.Read())
+            {
+                Question question = new Question();
+                question.id = (int)readerQuestion["idQuestion"];
+                question.listAnswer = this.getAnswers(dal, question.id);
+                
+            }
+            //**TEST CODE**//
+            int cpt = 0;
+            while (cpt < 10)
+            {
+                Question a = new Question();
+                a.description = "testDescription";
+                a.id = 1;
+                listQuestion.Add(a);
+                cpt++;
+            }
+            return listQuestion;
         }
 
         internal object getId()
@@ -45,10 +66,13 @@ namespace BusinessLayer.Mapping
             return this.id;
         }
 
-        public List<Answer> getAnswers(DAL.DAL dal)
+        public List<Answer> getAnswers(DAL.DAL dal, int idQuestion)
         {
             List<Answer> listAnswer = new List<Answer>();
-            SqlDataReader answerReader = dal.executeProcedure("getAnswer");
+            List<object> parameter = new List<object>();
+            parameter.Add(idQuestion);
+
+            SqlDataReader answerReader = dal.executeWithParameter("GetAnswerByIdQuestion", parameter);
             while (answerReader.Read())
             {
                 Answer answer = new Answer();
@@ -69,28 +93,6 @@ namespace BusinessLayer.Mapping
         internal void setOrder(int order)
         {
             this.order = order;
-        }
-
-        public void addOrientionQuestion(DAL.DAL dal)
-        {
-            List<Object> parameters = new List<object>();
-            parameters.Add(this.description);
-            parameters.Add(this.feature.getName());
-            dal.executeWithParameter("addQuestion", parameters);
-        }
-
-        public void modifyQuestion(DAL.DAL dal)
-        {
-
-        }
-
-        public void deleteQuestion(DAL.DAL dal)
-        {
-
-        }
-        public void modifyQuestionSettings(DAL.DAL dal)
-        {
-
         }
 
 
