@@ -8,14 +8,9 @@ namespace BusinessLayer.Mapping
 {
     class Feature
     {
-<<<<<<< HEAD
-        public int id { get; set; }
-        public string name{ get; set; }
-=======
         private int id;
-        public string name;
->>>>>>> e90bd66e919ef930b22f73ead2579acb8843faa7
-        public int weight { get; set; }
+        private string name;
+        private int weight;
 
         public Feature()
         {

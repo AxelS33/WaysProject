@@ -35,3 +35,5 @@ C:\Users\Adrien\Desktop\Exia\2ème année\DOT NET\Projet\Visual studio\Wayz\Wayz
 C:\Users\Adrien\Desktop\Exia\2ème année\DOT NET\Projet\Visual studio\Wayz\Wayz\obj\Debug\WMainMenuAdmin.g.cs
 C:\Users\Adrien\Desktop\Exia\2ème année\DOT NET\Projet\Visual studio\Wayz\Wayz\obj\Debug\WOrientationFinalResult.g.cs
 C:\Users\Adrien\Desktop\Exia\2ème année\DOT NET\Projet\Visual studio\Wayz\Wayz\obj\Debug\WOrientationJob.g.cs
+C:\Users\utilisateur1\Documents\WaysProject\Wayz\Wayz\bin\Debug\Wayz.exe.config
+C:\Users\utilisateur1\Documents\WaysProject\Wayz\Wayz\obj\Debug\Wayz.exe

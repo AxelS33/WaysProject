@@ -24,13 +24,13 @@ namespace BusinessLayer.BC
         {
             Player currentProfile = (Player) msg.data[0];
             Feature featureToWeight = currentProfile.currentQuestion.feature;
-            int weightToAdd = featureToWeight.weight;
+            int weightToAdd = featureToWeight.getWeight();
 
             foreach(Feature curentFeature in currentProfile.listFeature)
             {
                 if (curentFeature == featureToWeight)
                 {
-                    curentFeature.weight = weightToAdd;
+                    curentFeature.setWeight(weightToAdd);
                 }
             }
             msg.data.SetValue(currentProfile, 0);
@@ -135,9 +135,9 @@ namespace BusinessLayer.BC
             while (featureReader.Read())
             {
                 Feature feature = new Feature();
-                feature.id = (int) featureReader["idFeature"];
-                feature.name = (string)featureReader["nameFeature"];
-                feature.weight = (int)featureReader["weightFeature"];
+                feature.setId((int) featureReader["idFeature"]);
+                feature.setName((string)featureReader["nameFeature"]);
+                feature.setWeight((int)featureReader["weightFeature"]);
 
                 listFeatures.Add(feature);
             }
