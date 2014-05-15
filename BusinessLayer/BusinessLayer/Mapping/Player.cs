@@ -24,7 +24,7 @@ namespace BusinessLayer.Mapping
 
         public void setFeature(DAL.DAL dal)
         {
-      /*      SqlDataReader reader = dal.executeProcedure("getFeature");
+           SqlDataReader reader = dal.executeProcedure("getFeature");
 
             while (reader.Read())
             {
@@ -36,19 +36,7 @@ namespace BusinessLayer.Mapping
                 this.listFeature.Add(feature);
             }
 
-            reader.Close();*/
-            //*** TEST BOUCHON**//
-            int cpt = 0;
-            while (cpt < 10)
-            {
-                Feature feature = new Feature();
-                feature.setId(1);
-                feature.setName("name");
-                feature.setWeight(0);
-                this.listFeature.Add(feature);
-            }
-
-            
+            reader.Close();  
         }
 
         internal List<Feature> getListFeature()
@@ -60,6 +48,15 @@ namespace BusinessLayer.Mapping
         internal List<Question> getAskedQuestion()
         {
          return   this.askedQuestion;
+        }
+
+        internal void createPlayer(DAL.DAL dal)
+        {
+            List<Object> parameters = new List<object>();
+            parameters.Add(this.pseudo);
+            parameters.Add(this.score);
+
+            dal.executeWithParameter("createPlayer", parameters);
         }
     }
 }

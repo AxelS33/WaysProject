@@ -25,7 +25,7 @@ namespace BusinessLayer.BC
         public StgMsg.StgMsg validate(StgMsg.StgMsg msg, DAL.DAL dal)
         {
             player = (Player)msg.data[0];
-            player.createPlayer(player, dal);
+            player.createPlayer(dal);
             
             return msg;
         }
